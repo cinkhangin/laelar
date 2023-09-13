@@ -11,13 +11,13 @@ plugins {
 }
 
 android {
-    compileSdk = 33
+    compileSdk = 34
     namespace = "com.laelar.app"
 
     defaultConfig {
         applicationId = "com.laelar.app"
         minSdk = 26
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "0.1"
 
@@ -48,7 +48,7 @@ android {
 dependencies {
 
     //android(ktx
-    implementation("androidx.core:core-ktx:1.10.1")
+    implementation("androidx.core:core-ktx:1.12.0")
 
     //app compat
     implementation("androidx.appcompat:appcompat:1.6.1")
@@ -75,7 +75,7 @@ dependencies {
     implementation("androidx.navigation:navigation-ui-ktx:$navVersion")
 
     //lifecycle
-    val lifecycleVersion = "2.6.1"
+    val lifecycleVersion = "2.6.2"
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:$lifecycleVersion")
@@ -99,7 +99,7 @@ dependencies {
     implementation("com.github.cinkhangin:firex:1.2.0")
     implementation("com.github.cinkhangin:glow:0.2.0")
 
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
 
     //room
     implementation("androidx.room:room-runtime:2.5.2")

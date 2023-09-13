@@ -42,7 +42,7 @@ android {
 
 dependencies {
 
-    implementation("androidx.core:core-ktx:1.10.1")
+    implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.9.0")
 
@@ -65,7 +65,7 @@ dependencies {
     implementation("androidx.room:room-ktx:2.5.2")
     ksp("androidx.room:room-compiler:2.5.2")
 
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
 }
 
 afterEvaluate {
@@ -74,7 +74,7 @@ afterEvaluate {
             create<MavenPublication>("release") {
                 groupId = "com.github.cinkhangin"
                 artifactId = "laelar"
-                version = "0.0.1"
+                version = "0.0.2"
                 from(components["release"])
             }
         }
