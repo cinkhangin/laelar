@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Prime</string>
+    <string name="publish">Publish</string>
+    <string name="key_code">Key Code</string>
+    <string name="device_id">Device ID</string>
+    <string name="register">Register</string>
+    <string name="app_id">App ID</string>
+</resources>

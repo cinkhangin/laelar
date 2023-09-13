@@ -1,0 +1,96 @@
+[
+  {
+    "header": "Operators",
+    "label": "Modified in 07-08-2023",
+    "body": "Programming မှာ operators အမျိုးမျိုးရှိတဲ့အထဲမှာ အတွက်အချက် အတွက်သုံးတဲ့ Arithmetic operators တွေကိုအရင်ကြည့်ရအောင်။"
+  },
+  {
+    "title": "Arithmetic operators",
+    "subTitle": "Addition",
+    "body": "number တစ်ခုနှင့်တစ်ခုပေါင်းဖို့ + (addition operator) ကိုသုံးပါ။",
+    "code": "a = 1\nb = 2\nc = a + b\nprint(a + b) # output 3\nprint(c) # output 3",
+    "language": "python"
+  },
+  {
+    "subTitle": "Subtraction",
+    "body": "number တစ်ခုနှင့်တစ်ခုနုတ်ဖို့ - (subtraction operator) ကိုသုံးပါ။",
+    "code": "a = 2\nb = 1\nc = a - b\nprint(a - b) # output 1\nprint(c) # output 1",
+    "language": "python"
+  },
+  {
+    "subTitle": "Multiplication",
+    "body": "number တစ်ခုနှင့်တစ်ခုမြှောက်ဖို့ * (multiplication operator) ကိုသုံးပါ။",
+    "code": "a = 2\nb = 2\nc = a * b\nprint(a * b) # output 4\nprint(c) # output 4",
+    "language": "python"
+  },
+  {
+    "subTitle": "Division",
+    "body": "number တစ်ခုနှင့်တစ်ခုစားဖို့ * (division operator) ကိုသုံးပါ။",
+    "code": "a = 4\nb = 2\nc = a / b\nprint(a / b) # output 2\nprint(c) # output 2",
+    "language": "python"
+  },
+  {
+    "subTitle": "Modulus",
+    "body": "number တစ်ခုနှင့်တစ်ခုစားပြီးအကြွင်းကိုရှာဖို့ % (modulus operator) ကိုသုံးပါ။",
+    "code": "a = 5\nb = 2\nc = a % b\nprint(a % b) # output 1\nprint(c) # output 1",
+    "language": "python"
+  },
+  {
+    "subTitle": "Exponentiation",
+    "body": "number တစ်ခုနှင့်တစ်ခုအညွှန်းကိန်းအတွက် ** (exponentiation operator) ကိုသုံးပါ။",
+    "code": "a = 2\nb = 3\nc = a ** b\nprint(a ** b) # output 8\nprint(c) # output 8",
+    "language": "python"
+  },
+  {
+    "subTitle": "Floor Division",
+    "body": "Floor division ကတော့ division လိုဘဲအလုပ်လုပ်ပေမဲ့ အဖြေက round သလိုအနီးဆုံးကိုမယူဘဲ အောက်ကိုယူမှာဖြစ်တယ်။ 3.1 ဆိုရင် 3 3.9 ဆိုရင်လည်း 3 ကိုဘဲယူမှာဖြစ်တယ်။",
+    "code": "a = 20\nb = 3\nc = a // b\nprint(a // b) # output 6\nprint(c) # output 6",
+    "language": "python"
+  },
+  {
+    "title": "Assignment operators",
+    "body": "Assignment operators တွေကိုတော့ variables တွေကို assign လုပ်ဖို့သုံးတာပါ။ အများစုကိုတော့ လက်ရေးတိုလိုအသုံးပြုတာပါ။ ဥပမာတွေကိုကြည့်ပါ။",
+    "code": "# =\na = 1\n\n# +=\na += 1 # same as a = a + 1\n\n# -=\na -= 1 # same as a = a - 1\n\n# *=\n a *= 1 # same as a = a * 1\n\n# /=\na /= 1 #same as a = a / 1\n\n# %=\na %= 1 # same as a = a % 1",
+    "language": "python"
+  },
+  {
+    "title": "Comparison Operators",
+    "body": "Comparison operators တွေကိုတော့ value တစ်ခုနှင့်တစ်ခုကိုနှိုင်းယှဥ်ဖို့အတွက်သုံးတာပါ။ Comparison operators တွေရဲ့ result က True or False ဘဲထွက်မှာဖြစ်တယ်။"
+  },
+  {
+    "subTitle": "Equal Operator",
+    "body": "== Equal operator က value နှစ်ခုကို နှိုင်းယှဥ်ပြီး တူရင် True မတူရင် False ထွက်လိမ့်မယ်။",
+    "code": "a = 1\nb = 2\nc = a == b\nprint(c) # output False",
+    "language": "python"
+  },
+  {
+    "subTitle": "Not Equal Operator",
+    "body": "!= Equal operator က value နှစ်ခုကို နှိုင်းယှဥ်ပြီး မတူရင် True မတူရင် False ထွက်လိမ့်မယ်။",
+    "code": "a = 1\nb = 2\nc = a != b\nprint(c) # output True",
+    "language": "python"
+  },
+  {
+    "subTitle": "Greater Than Operator",
+    "body": "> Greater Than operator က value နှစ်ခုကို နှိုင်းယှဥ်ပြီး အရှေ့ကပိုကြီးရင် True ပိုငယ်ရင် False ထွက်လိမ့်မယ်။",
+    "code": "a = 1\nb = 2\nc = a > b\nprint(c) # output False",
+    "language": "python"
+  },
+  {
+    "subTitle": "Less Than Operator",
+    "body": "< Less operator က value နှစ်ခုကို နှိုင်းယှဥ်ပြီး အရှေ့ကပိုငယ်ရင် True ပိုကြီးရင် False ထွက်လိမ့်မယ်။",
+    "code": "a = 1\nb = 2\nc = a < b\nprint(c) # output True",
+    "language": "python"
+  },
+  {
+    "subTitle": "Greater Than or Equal Operator",
+    "body": ">= Greater Than or Equal operator က value နှစ်ခုကို နှိုင်းယှဥ်ပြီး အရှေ့ကပိုကြီးရင် (သို့) ညီရင် True ပိုငယ်ရင် False ထွက်လိမ့်မယ်။",
+    "code": "a = 1\nb = 2\nc = a >= b\nprint(c) # output False",
+    "language": "python"
+  },
+  {
+    "subTitle": "Less Than or Equal Operator",
+    "body": "<= Less Than or Equal operator က value နှစ်ခုကို နှိုင်းယှဥ်ပြီး အရှေ့ကပိုငယ်ရင် (သို့) ညီရင် True ပိုငယ်ရင် False ထွက်လိမ့်မယ်။",
+    "code": "a = 1\nb = 2\nc = a <= b\nprint(c) # output True",
+    "language": "python"
+  }
+]

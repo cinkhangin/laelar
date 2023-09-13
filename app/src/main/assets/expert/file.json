@@ -1,0 +1,49 @@
+[
+  {
+    "header": "File Handling",
+    "label": "Modified in 22-08-2023",
+    "body": "Python မှာ file တွေကို ရေးတာ ဖတ်တာဘယ်လိုလုပ်ရလဲဆိုတာကို ကြည့်ရအောင်။"
+  },
+  {
+    "title": "Read Files",
+    "subTitle": "Open and Close",
+    "body": "Python မှာ file ကိုဖတ်ဖို့ open() function ကိုသုံးရသလိုဘဲ မလိုအပ်တော့ဘူးဆိုရင် close() function ကိုခေါ်ရပါတယ်။ file ကို close မလုပ်ဘူးဆိုရင် Program တွေက access မရတာ၊ memory စားတာအပြင် အခြားပြသနာတွေဖြစ်နိုင်ပါတယ်။",
+    "code": "file = open('example.txt', 'r')\ncontent = file.read()\nprint(content)\nfile.close()",
+    "language": "python",
+    "extra": "open() function ရဲ့ပထမ parameter က file name ဖြစ်ပြီးတော့ ဒုတိယကတော့ mode 'r' (read) ဖြစ်ပါတယ်။ပြီးတော့ read() function ကိုခေါ်ပြီး file ရဲ့ content ကိုဖတ်ရပါတယ်။ content ကိုလိုချင်တဲ့နေရာမှာ အသုံးပြုပြီးတော့မလိုအပ်တော့ရင် close() function ကိုခေါ်ရမှာပါ။"
+  },
+  {
+    "subTitle": "Using Try",
+    "body": "open() function ကိုသုံးတဲ့အခါ close() function ကိုမခေါ်ခင်မှာ Program ကအကြောင်းအမျိုးမျိုးကြောင့် ပျက်သွားနိုင်တဲ့အတွက် try ကိုသုံးဖွင့်ပြီး finally မှာ file ကို close လုပ်ပါ။",
+    "code": "file = open('example.txt', 'r')\ntry:\n    content = file.read()\n    print(content)\nfinally:\n    file.close()",
+    "language": "python"
+  },
+  {
+    "subTitle": "Using With",
+    "body": "file ကို open close လုပ်ဖို့ with keyword ကအကောင်းဆုံးပါ။ with နှင့် open လုပ်မယ်ဆိုရင် အလိုအလျောက် close မှာဖြစ်တယ်။",
+    "code": "with open('example.txt', 'r') as file:\n    content = file.read()\n    print(content)",
+    "language": "python"
+  },
+  {
+    "title": "Write Files",
+    "body": "file ကို ရေးဖို့ ဒုတိယ parameter မှာ 'r' အစား 'w' (write) ကိုထည့်ပေးပါ။ ပြီးတော့ write() function နှင့်ရေးချင်တာကိုရေးနိင်ပါတယ်။",
+    "code": "with open('example.txt', 'w') as file:\n    file.write(\"hello, \")",
+    "language": "python"
+  },
+  {
+    "subTitle": "Appended Mode",
+    "body": "write mode ကိုသုံးရင် original content ကပျောက်သွားမှာဖြစ်လို့ မပျောက်စေချင်ရင် mode 'a' (append) ကိုသုံးရင် original နောက်မှာဆက်ရေးမှာဖြစ်တယ်။",
+    "code": "with open('example.txt', 'a') as file:\n    file.write(\"world!\")",
+    "language": "python"
+  },
+  {
+    "title": "Example",
+    "code": "hello beautiful/handsome person!",
+    "copyable": true,
+    "language": "example.txt"
+  },
+  {
+    "code": "with open('example.txt', 'r') as file:\n    content = file.read()\n    print(content)\n# hello beautiful/handsome person!\n\nwith open('example.txt', 'w') as file:\n    file.write(\"hello!\")\n\nwith open('example.txt', 'r') as file:\n    content = file.read()\n    print(content)\n# hello!",
+    "language": "python"
+  }
+]

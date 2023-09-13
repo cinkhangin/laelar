@@ -1,0 +1,32 @@
+[
+  {
+    "id": "stt0000",
+    "path": "books/start.json",
+    "name": "Getting Started",
+    "description": ""
+  },
+  {
+    "id": "bsc01a1",
+    "path": "books/basic.json",
+    "name": "Basic",
+    "description": "replace"
+  },
+  {
+    "id": "itm02b1",
+    "path": "books/intermediate.json",
+    "name": "Intermediate",
+    "description": "replace"
+  },
+  {
+    "id": "adv03c1",
+    "path": "books/advanced.json",
+    "name": "Advanced",
+    "description": "replace"
+  },
+  {
+    "id": "exp04d1",
+    "path": "books/expert.json",
+    "name": "Expert",
+    "description": "replace"
+  }
+]

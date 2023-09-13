@@ -1,0 +1,22 @@
+[
+  {
+    "header": "What",
+    "label": "Modified in 20-08-2023",
+    "title": "What is Python Programming Language?",
+    "body": "Python programming language ကို ၁၉၈၀ ပတ်ဝန်းကျင်မှာ Guido Van Rossom ကစတင်တီထွင်ခဲ့တယ်။ 1991 ခုနှစ်မှာစတင် release ခဲ့တာဖြစ်တယ်။"
+  },
+  {
+    "subTitle": "High-level Language",
+    "body": "Python က high-level programming language တစ်ခုဖြစ်တယ်။ High-level ဆိုတာကတော့ Programming language က hardware နှင့်နီးရင် low-level လို့ခေါ်တယ်။ ဥပမာ Assembly or C။ Hardware နှင့်ဝေးရင် high-level language ဖြစ်လာတယ်။"
+  },
+  {
+    "subTitle": "Dynamically Typed Language",
+    "body": "Python က dynamically typed programming language တစ်ခုဖြစ်တယ်။ dynamically ဆိုတာကတော့ Programming language မှာ data type ကိုရေးစရာမလိုဘဲ program အနေနှင့် အလိုအ‌လျှောက် type သတ်မှတ်ပေးတာကိုပြောတာပါ။ statically typed မှာတော့ data type ကိုရေးပေးရတယ်။",
+    "code": "\"\"\"dynamically type\nPython syntax\nvariable_name = value\"\"\"\nx = 5",
+    "language": "python"
+  },
+  {
+    "code": "/**\nstatically type\n*Java syntax\n*data_type variable_name = value;\n*/\nint x = 5;",
+    "language": "java"
+  }
+]

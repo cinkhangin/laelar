@@ -1,0 +1,44 @@
+[
+  {
+    "id": "bst01a1",
+    "bookId": "bsc01a1",
+    "path": "basic/basic_syntax.json",
+    "title": "Basic Syntax",
+    "description": "replace"
+  },
+  {
+    "id": "vrb02a1",
+    "bookId": "bsc01a1",
+    "path": "basic/variables.json",
+    "title": "Variables",
+    "description": "replace"
+  },
+  {
+    "id": "dtt03a1",
+    "bookId": "bsc01a1",
+    "path": "basic/data_types.json",
+    "title": "Data Types",
+    "description": "replace"
+  },
+  {
+    "id": "str04a1",
+    "bookId": "bsc01a1",
+    "path": "basic/strings.json",
+    "title": "Strings",
+    "description": "replace"
+  },
+  {
+    "id": "opr05a1",
+    "bookId": "bsc01a1",
+    "path": "basic/operators.json",
+    "title": "Operators",
+    "description": "replace"
+  },
+  {
+    "id": "ife06a1",
+    "bookId": "bsc01a1",
+    "path": "basic/if_else.json",
+    "title": "If Else Statement",
+    "description": "replace"
+  }
+]

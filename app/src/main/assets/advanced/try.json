@@ -1,0 +1,18 @@
+[
+  {
+    "header": "Try and Except",
+    "label": "Modified in 10-08-2023",
+    "body": "try and except ကို error တွေကိုင်တွယ်ဖို့အတွက် သုံးတာဖြစ်တယ်။",
+    "code": "print(x) # error and crash",
+    "extra": "ပေါ်က code ကိုကြည့်လိုက်ရင် x ကို initialize(assign value) လုပ်ထားခြင်းမရှိတဲ့အတွက် program က crash မှာဖြစ်တယ်",
+    "language": "python"
+  },
+  {
+    "subTitle": "Example",
+    "body": "try က code ကိုစမ်းပေးတယ် error မရှိရင် ပုံမှန်ဘဲဆက်သွားမှာဖြစ်တယ်။",
+    "code": "try:\n    print(x)\nexcept:\n    print(\"Error\")",
+    "language": "python"
+  }
+
+
+]

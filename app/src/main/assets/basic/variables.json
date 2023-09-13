@@ -1,0 +1,44 @@
+[
+  {
+    "header": "Variables",
+    "label": "Modified in 03-08-2023",
+    "body": "Variable ဆိုတာ အချက်အလက်တွေကို လိုအပ်သလိုအသုံးပြုနိုင်အောင် ယာယီသိုထားဖို့အသုံးပြုတာဖြစ်ပါတယ်။",
+    "code": "pi = 3.1415\nradius = 30\n\n#circumference and area of a circle\ncircumference = 2 * pi * radius \narea = pi * radius ** 2",
+    "language": "python"
+  },
+  {
+    "subTitle": "Syntax",
+    "body": "- နာမည်ပေးမယ်\n- assignment လုပ်မယ်\n- တန်ဘိုးပေးမယ်",
+    "code": "#name assigment value\nx = 5",
+    "language": "python",
+    "extra": "name မှာ space မပါရဘူး၊ ဂဏန်းနှင့် မစရဘူး။ အဲနှစ်ခုကလွဲပြီး ကြိုက်တဲ့နာမည်ပေးလို့ရတယ်။"
+  },
+  {
+    "subTitle": "Multi-Word",
+    "body": "စာလုံးတစ်ခုထက်ပိုတယ်ဆိုရင် snake case ကိုသုံးပါ။ snake case ဆိုတာ စာကားလုံးတွေကို _ (underscore) နှင့်ဆက်တာကိုပြောတာပါ။",
+    "code": "the_name = \"pfm\"\nis_great = True",
+    "language": "python"
+  },
+  {
+    "subTitle": "Multiple Variables in one line",
+    "body": "python မှာ variable အများစုကို တစ်ကြောင်းတည်းမှာ assign လုပ်လို့ရပါတယ်။",
+    "code": "a = \"apple\"\nb = \"banana\"\nc = \"cucumber\"\n# into\na, b, c = \"apple\", \"banana\", \"cucumber\"",
+    "language": "python"
+  },
+  {
+    "body": "variable တွေရဲ့တန်ဘိုးတွေကတူတူဆိုရင် အောက်ပါတိုင်းရေးရပါတယ်။",
+    "code": "a = b = c = \"orange\"",
+    "language": "python"
+  },
+  {
+    "subTitle": "Data Types",
+    "body": "Variable တွေမှာ type လို့ခေါ်တဲ့ အမျိုးအစားတွေရှိတယ်။\nကိန်းပြည့်တွေအတွက် int။ ဒသမကိန်းတွေအတွက် float။ စာတွေအတွက် string။ နှင့် True or False အတွက် bool။",
+    "code": "x = 1 # int\npi = 3.14 # float\nname = \"pfm\" # string\nhappy = True #bool",
+    "language": "python"
+  },
+  {
+    "body": "type ကိုသိချင်ရင် type() function ကိုသုံးပါ။",
+    "code": "a = type(3)\nb = type(3.0)\nc = type(\"c\")\nd = type(True)\n\nprint(a)\nprint(b)\nprint(c)\nprint(d)\n\n# output\n# int\n# float\n# string\n# bool",
+    "language": "python"
+  }
+]

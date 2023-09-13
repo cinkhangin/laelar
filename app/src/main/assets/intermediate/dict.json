@@ -1,0 +1,15 @@
+[
+  {
+    "header": "Dictionary",
+    "label": "Modified in 08-08-2023",
+    "body": "Dictionary က Set လိုဘဲ element တွေကိုထပ်ရေးလို့မရဘူး။ element တွေကိုပြောင်းလို့ရတယ်။ Dictionary က key နှင့် value တွဲပြီးထည့်ရတယ်။",
+    "code": "fruits = {\"name\":\"apple\", \"color\": \"red\"}\nprint(fruits) # output {\"name\":\"apple\", \"color\": \"red\"}",
+    "language": "python"
+  },
+  {
+    "subTitle": "Key",
+    "body": "value ကိုယူချင်ရင် key ကိုသုံးရတယ်။",
+    "code": "fruits = {\"name\":\"apple\", \"color\": \"red\"}\nprint(fruits[name]) # output apple",
+    "language": "python"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "header": "Function",
+    "label": "Modified in 09-08-2023",
+    "body": "code တွေကို တစ်ခါရေးထားပြီး လိုအပ်သလိူအသုံးပြုနိုင်ဖို့ function တွေကိုသုံးတာပါ။ function ရေးဖို့ def keyword ကိုသုံးပါ။",
+    "code": "def my_function():\n    # code_block\n\n# calling my_function\nmy_function()",
+    "language": "python",
+    "extra":"function တွေကို လိူအပ်တဲ့နေရာမှာ ပြန်သုံးတာကို ခေါ်(call) လို့သုံးပါတယ်။"
+  },
+  {
+    "subTitle": "Example",
+    "body": "Hello World ကို print ပေးမယ့် function တစ်ခုရေးရအောင်။",
+    "code": "def print_hello():\n    print(\"Hello, World!\")\n\nprint_hello() # output Hello, World!",
+    "language": "python"
+  },
+  {
+    "subTitle": "Parameter and Argument",
+    "body": "Hello World မဟုတ်ဘဲ ကြိုက်တဲ့စာ print ပေးမယ့် function တစ်ခုရေးရအောင်။ ဒီအတွက် data ကို () ထဲမှာထားရပါတယ်။ ဒါကို parameter (သို့) param လို့ခေါ်တယ်။",
+    "code": "def say(text):\n    print(text)\n\nsay(\"Hello!\") # output Hello!\nsay(\"Hi!\") # output Hi!",
+    "language": "python",
+    "extra": "function က်ုခေါ်တဲ့ခါ ထည့်လိုက်တဲ့ data တွေကိုတော့ argument လိူခေါ်တယ်။"
+  },
+  {
+    "subTitle": "Default Argument",
+    "body": "Default argument လည်းပေးလို့ရတယ်",
+    "code": "def say(text = \"Hi!\"):\n    print(text)\n\nsay(\"Hello!\") # output Hello!\nsay() # output Hi!",
+    "language": "python"
+  },
+  {
+    "subTitle": "Return",
+    "body": "Function တွေကနေ data ပြန်ယူလိုရတယ်။ ဒီအတွက် return keyword ကိုသုံးပါ။",
+    "code": "def add(a, b):\n    return a + b\n\nx = add(1, 2)\nprint(x) # output 3",
+    "language": "python"
+  }
+]

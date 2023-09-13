@@ -1,0 +1,96 @@
+[
+  {
+    "header": "String Methods",
+    "body": "String မှာရှိတဲ့အသုံးများတဲ့ method တွေကိုကြည့်ရ‌အောင်။"
+  },
+  {
+    "subTitle": "capitalize()",
+    "body": "ဒီ method က ပထမ character ကိုအကြီးပြောင်းတယ်။",
+    "code": "text = \"hello\"\nprint(text.capitalize()) # output Hello",
+    "language": "python"
+  },
+  {
+    "subTitle": "count()",
+    "body": "ဒီ method က string ထံမှာ character တစ်ခုကဘယ်နှစ်ကြိမ်လာတယ်ဆိုတာကို ရေတွက်တယ်။",
+    "code": "text = \"hello\"\nprint(text.count(\"l\")) # output 2",
+    "language": "python"
+  },
+  {
+    "subTitle": "endswith()",
+    "body": "ဒီ method က နောက်ဆုံး character ကိုစစ်တယ်။",
+    "code": "text = \"hello\"\nprint(text.endswith(\"o\")) # output True",
+    "language": "python"
+  },
+  {
+    "subTitle": "find()",
+    "body": "ဒီ method က character ရဲ့ index ကိုရှာပေးတယ်။",
+    "code": "text = \"hello\"\nprint(text.find(\"h\")) # output 0",
+    "language": "python"
+  },
+  {
+    "subTitle": "index()",
+    "body": "ဒီ method က index ရဲ့ character ကိုပေးတယ်။",
+    "code": "text = \"hello\"\nprint(text.index(\"0\")) # output h",
+    "language": "python"
+  },
+  {
+    "subTitle": "isalnum()",
+    "body": "ဒီ method က string က alphanumeric(a-zA-Z0-9) ဆိုရင် True မဟုတ်ရင် False ကိုပေးတယ်။",
+    "code": "text = \"hello1\"\nprint(text.isalnum()) # output True",
+    "language": "python"
+  },
+  {
+    "subTitle": "isalpha()",
+    "body": "ဒီ method က string က aplphaberc(a-zA-Z) ဆိုရင် True မဟုတ်ရင် False ကိုပေးတယ်။",
+    "code": "text = \"hello1\"\nprint(text.isalpha()) # output False",
+    "language": "python"
+  },
+  {
+    "subTitle": "isdigit()",
+    "body": "ဒီ method က string က digit(0-9) ဆိုရင် True မဟုတ်ရင် False ကိုပေးတယ်။",
+    "code": "text = \"123\"\nprint(text.isdigit()) # output True",
+    "language": "python"
+  },
+  {
+    "subTitle": "islower()",
+    "body": "ဒီ method က string က lowercase ဆိုရင် True မဟုတ်ရင် False ကိုပေးတယ်။",
+    "code": "text = \"hello\"\nprint(text.islower()) # output True",
+    "language": "python"
+  },
+  {
+    "subTitle": "isupper()",
+    "body": "ဒီ method က string က uppercase ဆိုရင် True မဟုတ်ရင် False ကိုပေးတယ်။",
+    "code": "text = \"hello\"\nprint(text.isupper()) # output False",
+    "language": "python"
+  },
+  {
+    "subTitle": "replace()",
+    "body": "ဒီ method က string ထဲက value ကို ပြောင်းပေးတယ်။",
+    "code": "text = \"hello\"\nprint(text.replace(\"ello\",\"i\")) # output hi",
+    "language": "python"
+  },
+  {
+    "subTitle": "split()",
+    "body": "ဒီ method က string ထဲက character တွေကို list အဖြစ်ပြောင်းတယ်။",
+    "code": "text = \"hello\"\nprint(text.split()) # output [\"h\", \"e\", \"l\", \"l\", \"o\"]",
+    "language": "python"
+  },
+  {
+    "subTitle": "startswith()",
+    "body": "ဒီ method က ပထမ character ကိုစစ်တယ်။",
+    "code": "text = \"hello\"\nprint(text.startswith(\"o\")) # output False",
+    "language": "python"
+  },
+  {
+    "subTitle": "swapcase()",
+    "body": "ဒီ method က uppercase ကို lowercase၊ lowercase ကို uppercase အဖြစ်ပြောင်းတယ်။",
+    "code": "text = \"Hello\"\nprint(text.swapcase()) # output hELLO",
+    "language": "python"
+  },
+  {
+    "subTitle": "upper()",
+    "body": "ဒီ method က lowercase ကို uppercase အဖြစ်ပြောင်းတယ်။",
+    "code": "text = \"Hello\"\nprint(text.upper()) # output HELLO",
+    "language": "python"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "header": "If Else Statement",
+    "label": "Modified in 08-08-2023",
+    "body": "Data အချက်အလက်တွေကိုစစ်ဆေးဖို့ if else statement ကိုသုံးပါတယ်"
+  },
+  {
+    "subTitle": "Syntax",
+    "code": "if condition:\n    do_something()\nelse:\n    do_something()",
+    "language": "python",
+    "extra": "condition က boolean ဖြစ်ရပါမယ်။"
+  },
+  {
+    "subTitle": "Example",
+    "code": "num = 7\nif num > 5:\n    print(\"num is greater than 5\")\nelse:\n    print(\"num is not greater than 5\")",
+    "language": "python",
+    "extra": "if else မှာ indentation ကိုသတိထားပါ။"
+  },
+  {
+    "subTitle": "Elif",
+    "body": "condition တစ်ခုထက်ပိုစစ်ဖို့လိုရင် elif keyword ကိုသုံးပါ။",
+    "code": "num = 7\nif num > 5:\n    print(\"num is greater than 5\")\nelif num == 5:\n    print(\"num is equal to 5\")else:\n    print(\"num is not greater than 5\")",
+    "language": "python"
+  },
+  {
+    "subTitle": "One-line If ",
+    "body": "if ကိုတစ်ကြောင်းတည်းရေးလို့ရတယ်။",
+    "code": "num = 7\nif num > 5: print(\"num is greater than 5\")",
+    "language": "python"
+  },
+  {
+    "subTitle": "One-line If Else",
+    "body": "if else ကိုတစ်ကြောင်းတည်းရေးလို့ရတယ်။",
+    "code": "num = 7\nprint(\"greater\") if num > 5 else print(\"lesser\")",
+    "language": "python"
+  }
+]

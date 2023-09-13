@@ -1,0 +1,45 @@
+[
+  {
+    "header": "Loop",
+    "label": "Modified in 08-08-2023",
+    "body": "အရာတစ်ခုကို ထပ်ခါထပ်ခါလုပ်ဖို့ဖြစ်စေ အရာအများကြီးကို တစ်ခုပြီးတစ်ခုလုပ်ဆောင်ဖို့ဖြစ်စေ loop ကိုသုံးရပါတယ်။ While loop ကိုအရင်ကြည့်ရအောင်။"
+  },
+  {
+    "title": "While loop",
+    "body": "While loop ရဲ့ syntax က if statement နှင့် ခပ်ဆင်ဆင်ဘဲ။",
+    "code": "while condition:\n    do_something()",
+    "language": "python",
+    "extra": "condition မှန်နေတစ်ရွေ့ ထပ်ခါထပ်ခါ loop ဖြစ်နေမှာဖြစ်တယ်။"
+  },
+  {
+    "subHeader": "Example",
+    "body": "i ရဲ့တန်ဘိုးက 0 ဖြစ်တယ်။ while loop ကို စတဲ့ခါ condition ကိုစစ်တယ် i က 3 ထက်ငယိတဲ့အတွက် i ကို print တယ်။ i ရဲ့တန်ဘိုးကို တစ်ခုတိုးတယ်။ i ရဲ့တန်ဘိုးက 1 ဖြစ်လာတယ်။ condition ကိုစစ်တယ် i က 3 ထက်ငယိတဲ့အတွက် i ကို print တယ်။ i ရဲ့တန်ဘိုးကို တစ်ခုတိုးတယ်။ i ရဲ့တန်ဘိုးက 2 ဖြစ်လာတယ်။ condition ကိုစစ်တယ် i က 3 ထက်ငယိတဲ့အတွက် i ကို print တယ်။ i ရဲ့တန်ဘိုးကို တစ်ခုတိုးတယ်။ i ရဲ့တန်ဘိုးက 3 ဖြစ်လာတယ်။ condition ကိုစစ်တယ် i က 3 ထက်မငယ်တော့တဲ့အတွက် while loop ကပြီးသွားမယ်။",
+    "code": "i = 0 while i < 3:\n    print(i)\n    i += 1\n# output\n# 0\n# 1\n# 2",
+    "language": "python"
+  },
+  {
+    "subHeader": "Break",
+    "body": "အချိန်မတန်ဘဲ ရပ်ချင်ရင် break keyword ကိုသုံးပါ။",
+    "code": "i = 0 while i < 3:\n    print(i)\n    if i == 1:\n        break\n    i += 1\n# output\n# 0\n# 1",
+    "language": "python"
+  },
+  {
+    "subHeader": "Continue",
+    "body": "code တစ်ချို့ကိုကျော်ချင်ရင် continue keyword ကိုသုံးပါ။",
+    "code": "i = 0 while i < 3:\n    i += 1\n    if i == 2:\n        continue\n    print(i)# output\n# 1\n# 3",
+    "language": "python"
+  },
+  {
+    "title": "For loop",
+    "body": "For loop ကို List, Tuple, Set, Dictionary, နှင့် String  တို့လို array အမျိုးအစားတွေကို loop ဖို့သုံးတယ်။။",
+    "code": "apple = \"apple\"\nfor character in apple:\n    print(character)\n# output\n# a\n# p\n# p\n# l\n# e",
+    "language": "python",
+    "extra": "while loop လိုဘဲ break နှင့် continue သုံးလို့ရတယ်။"
+  },
+  {
+    "subHeader": "Range",
+    "body": "range() ကိုသုံးပြီး တစ်ခုနှင့်တစ်ခုကြား loop လို့လည်းရပါတယ်။",
+    "code": "# loop 0 until 10\nfor i in range(10):\n    print(i)\n\n# loop 5 until 10\nfor i in range(5, 10):\n    print(i)\n\n# loop 0 until 10 (step 2)\nfor i in range(0, 10, 2):\n    print(i)",
+    "language": "python"
+  }
+]

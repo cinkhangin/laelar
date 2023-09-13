@@ -1,0 +1,25 @@
+[
+  {
+    "header": "Basic Syntax",
+    "label": "Modified in 02-08-2023",
+    "body": "Computer Science မှာ syntax ဆိုတာကတော့ programming language တစ်ခုရဲ့ code ရေးသားတည်ဆောက်ပုံကိုပြောတာဖြစ်တယ်။"
+  },
+  {
+    "subTitle": "Hello World",
+    "code": "print(\"Hello, World!\")\n\n# output\n# Hello, World!",
+    "language": "python"
+  },
+  {
+    "subTitle": "Indentation",
+    "body": "Indentation ဆိုတာကတော့ code တစ်ကြောင်းရဲ့အရှေ့မှာထားတဲ့ space ကိုပြောတာဖြစ်တယ်။",
+    "code": "if 1 < 2:\n    print(\"1 is less than 2\")",
+    "language": "python"
+  },
+  {
+    "subTitle": "Comment",
+    "body": "Comment ဆိုတာကတော့ code တွေကို comment ပေးဖို့သုံးတာဖြစ်တယ်။",
+    "code": "# This is a comment\n# This is another comment\n\"\"\"This is a\nmulti-line comment\"\"\"",
+    "language": "python",
+    "extra": "\"\"\" ကိုလည်း comment အတွက်အသုံးပြုလို့ရပါတယ်။"
+  }
+]

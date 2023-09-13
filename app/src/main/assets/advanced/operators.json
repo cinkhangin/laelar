@@ -1,0 +1,61 @@
+[
+  {
+    "header": "Operators",
+    "label": "Modified in 10-08-2023",
+    "body": "Python operators တစ်ချို့ဆက်ကြည့်ရအောင်။"
+  },
+  {
+    "title": "Logical Operators",
+    "body": "Logical operators တွေကိုတော့ boolean တစ်ခုနှင့်တစ်ခုကိုနှိုင်းယှဥ်ဖို့အတွက်သုံးတာပါ။ Logical operators တွေရဲ့ result က True or False ဘဲထွက်မှာဖြစ်တယ်။"
+  },
+  {
+    "subTitle": "And Operator",
+    "body": "and operator က boolean နှစ်ခုကို နှိုင်းယှဥ်ပြီး နှစ်ခုလုံးမှန်မှ True မဟုတ်ရင် False ထွက်လိမ့်မယ်။",
+    "code": "a = 1 == 1\nb = 2 == 2\nc = a and b\nprint(c) # output True",
+    "language": "python"
+  },
+  {
+    "subTitle": "Or Operator",
+    "body": "or operator က boolean နှစ်ခုကို နှိုင်းယှဥ်ပြီး အမှန်တစ်ခုခုရှိရင် True မဟုတ်ရင် False ထွက်လိမ့်မယ်။",
+    "code": "a = 1 == 2\nb = 2 == 2\nc = a or b\nprint(c) # output True",
+    "language": "python"
+  },
+  {
+    "subTitle": "Not Operator",
+    "body": "not operator က boolean value ရဲ့ဆန့်ကျင်ဘက် result ကိုပေးတယ်။",
+    "code": "a = 1 == 1\nb = not(a)\nprint(b) # output False",
+    "language": "python"
+  },
+  {
+    "title": "Identity Operators",
+    "body": "Identity operators တွေကိုတော့ value တစ်ခုနှင့်တစ်ခုကိုနှိုင်းယှဥ်တာမဟုတ်ဘဲ object နှစ်ခုကအတူတူဖြစ်တယ်မဖြစ်ဘူးဆိုတာကို ကြည့်ဖို့အတွက်သုံးတာပါ။ Identity operators တွေရဲ့ result က True or False ဘဲထွက်မှာဖြစ်တယ်။"
+  },
+  {
+    "subTitle": "Is Operator",
+    "body": "is operator က object နှစ်ခုကို ကြည့်ပြီး နှစ်ခုလုံးတူမှ True မဟုတ်ရင် False ထွက်လိမ့်မယ်။",
+    "code": "x = 1 \nif type(x) is int:\n    print(x is int)",
+    "language": "python"
+  },
+  {
+    "subTitle": "Is Not Operator",
+    "body": "is not operator က object နှစ်ခုကို ကြည့်ပြီး နှစ်ခုလုံးမတူမှ True မဟုတ်ရင် False ထွက်လိမ့်မယ်။",
+    "code": "x = 1 \nif type(x) is not int:\n    print(x is not int)",
+    "language": "python"
+  },
+  {
+    "title": "Membership Operators",
+    "body": "membership operators တွေကိုတော့ value တစ်ခုက အစုထဲမှာပါမပါဆိုတာကို ကြည့်ဖို့အတွက်သုံးတာပါ။ Membersguo operators တွေရဲ့ result က True or False ဘဲထွက်မှာဖြစ်တယ်။"
+  },
+  {
+    "subTitle": "In Operator",
+    "body": "in operator မှာ value တစ်ခုကအစုထဲပါရင် True မဟုတ်ရင် False ထွက်လိမ့်မယ်။",
+    "code": "fruit_list = [\"apple\", \"banana\", \"cherry\"]\nfruit = \"apple\"\nif fruit in fruit_list:\n    print(fruit)",
+    "language": "python"
+  },
+  {
+    "subTitle": "Not In Operator",
+    "body": "not in operator မှာ value တစ်ခုကအစုထဲမပါရင် True မဟုတ်ရင် False ထွက်လိမ့်မယ်။",
+    "code": "fruit_list = [\"apple\", \"banana\", \"cherry\"]\nfruit = \"apricot\"\nif fruit not in fruit_list:\n    print(fruit)",
+    "language": "python"
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "header": "Strings",
+    "label": "Modified in 10-08-2023",
+    "body": "Python မှာစာတွေရေးဖို့အတွက် string ကိုအသုံးပြုရပါတယ်။",
+    "code": "name = \"pfm\"",
+    "language": "python",
+    "extra": "string တွေကိုဘယ်လိုအသုံးပြုရလဲဆိုတာ ကြည့်ရအောင်။"
+  },
+  {
+    "subTitle": "Strings are Arrays",
+    "body": "Python မှာ string တွေက array အမျိုးအစားဘဲဖြစ်တယ်။",
+    "code": "a = \"apple\"\nprint(a[1]) # output p",
+    "language": "python"
+  },
+  {
+    "subTitle": "Loop and Print",
+    "body": "အက္ခရာတစ်ခုချင်းကို in operator ကိုသုံးပြီး loop လို့ရတယ်။",
+    "code": "a = \"apple\"\nfor char in a:\n    print(char)\n# output\n# a\n# p\n# p\n# l\n# e",
+    "language": "python"
+  },
+  {
+    "subTitle": "Check",
+    "body": "ရှာချင်တာရှိရင်လည်း in operator ကိုသုံးပြီး ရှာလို့ရတယ်။",
+    "code": "text = \"I love PFM\"\nprint(\"love\" in text)\n# output True",
+    "language": "python"
+  },
+  {
+    "subTitle": "Slicing",
+    "body": "range ကိုသုံးပြီး လိုချင်တဲ့အပိုင်းကို ယူတာကို Slicing လို့ခေါ်တယ်။ အောက်က text မှာ love ကို slicing လုပ်ရအောင်။",
+    "code": "text = \"I love PFM\"\nprint(text[2:6])\n# output love",
+    "language": "python"
+  },
+  {
+    "subTitle": "Formatting",
+    "body": "number တွေနှင့် string တွေကို ပေါင်းလို့မရတဲ့အတွက် formatting လုပ်ရမှာဖြစ်တယ်",
+    "code": "age = 7\ntext = \"I am\" + age + \"years old\"# error\ntext = \"I am {} years old\"\nprint(text.format(age)) # output I am 7 years old",
+    "language": "python"
+  }
+]

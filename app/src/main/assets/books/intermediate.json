@@ -1,0 +1,51 @@
+[
+  {
+    "id": "lst01b1",
+    "bookId": "itm02b1",
+    "path": "intermediate/list.json",
+    "title": "List",
+    "description": "replace"
+  },
+  {
+    "id": "tpl02b1",
+    "bookId": "itm02b1",
+    "path": "intermediate/tuple.json",
+    "title": "Tuple",
+    "description": "replace"
+  },
+  {
+    "id": "set03b1",
+    "bookId": "itm02b1",
+    "path": "intermediate/set.json",
+    "title": "Set",
+    "description": "replace"
+  },
+  {
+    "id": "dct04b1",
+    "bookId": "itm02b1",
+    "path": "intermediate/dict.json",
+    "title": "Dictionary",
+    "description": "replace"
+  },
+  {
+    "id": "str05b1",
+    "bookId": "itm02b1",
+    "path": "intermediate/strings.json",
+    "title": "String",
+    "description": "replace"
+  },
+  {
+    "id": "lps06b1",
+    "bookId": "itm02b1",
+    "path": "intermediate/loops.json",
+    "title": "Loops",
+    "description": "replace"
+  },
+  {
+    "id": "fnc07b1",
+    "bookId": "itm02b1",
+    "path": "intermediate/def.json",
+    "title": "Function",
+    "description": "replace"
+  }
+]

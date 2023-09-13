@@ -1,0 +1,9 @@
+[
+  {
+    "header": "Lambda",
+    "label": "Modified in 09-08-2023",
+    "body": "lambda တွေကတော့ function တွေလိုပါဘဲ။",
+    "code": "add = lambda a, b : a + b\nprint(add(1, 2)) # output 3",
+    "language": "python"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "lmd01c1",
+    "bookId": "adv03c1",
+    "path": "advanced/lambda.json",
+    "title": "Lambda",
+    "description": "replace"
+  },
+  {
+    "id": "cls02c1",
+    "bookId": "adv03c1",
+    "path": "advanced/class.json",
+    "title": "Class and Object",
+    "description": "replace"
+  },
+  {
+    "id": "str03c1",
+    "bookId": "adv03c1",
+    "path": "advanced/strings.json",
+    "title": "String methods",
+    "description": "replace"
+  },
+  {
+    "id": "opr04c1",
+    "bookId": "adv03c1",
+    "path": "advanced/operators.json",
+    "title": "Operators",
+    "description": "replace"
+  },
+  {
+    "id": "try05c1",
+    "bookId": "adv03c1",
+    "path": "advanced/try.json",
+    "title": "Try and Except",
+    "description": "replace"
+  }
+]

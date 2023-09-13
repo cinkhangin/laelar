@@ -1,0 +1,37 @@
+[
+  {
+    "id": "wht0101",
+    "bookId": "stt0000",
+    "path": "start/what.json",
+    "title": "What",
+    "description": "replace"
+  },
+  {
+    "id": "who0201",
+    "bookId": "stt0000",
+    "path": "start/who.json",
+    "title": "Who uses Python?",
+    "description": "replace"
+  },
+  {
+    "id": "why0301",
+    "bookId": "stt0000",
+    "path": "start/why.json",
+    "title": "Why Python?",
+    "description": "replace"
+  },
+  {
+    "id": "whr0401",
+    "bookId": "stt0000",
+    "path": "start/where.json",
+    "title": "Where to Code Python?",
+    "description": "replace"
+  },
+  {
+    "id": "how0501",
+    "bookId": "stt0000",
+    "path": "start/how.json",
+    "title": "How to Learn Python?",
+    "description": "replace"
+  }
+]

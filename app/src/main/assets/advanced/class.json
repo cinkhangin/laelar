@@ -1,0 +1,21 @@
+[
+  {
+    "header": "Class and Object",
+    "label": "Modified in 10-08-2023",
+    "body": "Python က object oriented programming(OOP) language ဖြစ်တယ်။ OOP မှာ object လုပ်ဖို့ class တွေကိုအသုံးပြုရတာဖြစ်တယ်။",
+    "code": "# create a class\nclass ClassName:\n   property = 1\n# create an object\nmyClass = ClassName()\nprint(myClass.property) # output 1",
+    "language": "python"
+  },
+  {
+    "subTitle": "Init",
+    "body": "Python class တွေ က  __init__ (built-in) function မပါဘူးဆိုရင် သိပ်အသုံးမဝင်တဲ့အတွက် __init__ function ကိုကြည့်ရအောင်။",
+    "code": "class User:\n    def __init__(self, name, email):\n        self.name = name\n        self.email = email\n\njohn = User(\"John Doe\", \"johndoe@gmail.com\")\nprint(john.email) # output johndoe@gmail.com",
+    "language": "python"
+  },
+  {
+    "subTitle": "Method",
+    "body": "class ထဲက function တွေကို method လို့ခေါ်တယ်။",
+    "code": "class User:\n    def __init__(self, name, email):\n        self.name = name\n        self.email = email\n\n    def say_name(self):\n        print(self.name)\n\njohn = User(\"John Doe\", \"johndoe@gmail.com\")\njohn.say_name() # output John Doe",
+    "language": "python"
+  }
+]

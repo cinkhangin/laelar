@@ -1,0 +1,44 @@
+[
+  {
+    "header": "Strings",
+    "label": "Modified in 03-08-2023",
+    "body": "Python မှာစာတွေရေးဖို့အတွက် string ကိုအသုံးပြုရပါတယ်။",
+    "code": "name = \"pfm\"",
+    "language": "python",
+    "extra": "string တွေကိုဘယ်လိုအသုံးပြုရလဲဆိုတာ ကြည့်ရအောင်။"
+  },
+  {
+    "subTitle": "Syntax",
+    "body": "string value ကို ' single quote (သို့) \" double quote နှင့်ရေးရမှာဖြစ်တယ်။",
+    "code": "name = 'PFM'\nlong_form = \"Programming for Myanmar\"",
+    "language": "python",
+    "extra": "single quote ဘဲသုံးသုံး double quote ဘဲသုံးသုံး အဆင်ပြေပါတယ်။ ဖြစ်နိုင်ရင်တော့ အပါ်ကလို ရောမသုံးပါနှင့်။"
+  },
+  {
+    "subTitle": "Multiple lines",
+    "body": "string value တစ်ကြောင်းထက်ပိုရေးချင်ရင် အောက်ပါအတိုင်းရေးနိုင်ပါတယ်။",
+    "code": "long_form = '''Programming\nfor\nMyanmar'''",
+    "language": "python",
+    "extra": "single quote ဘဲသုံးသုံး double quote ဘဲသုံးသုံး အဆင်ပြေပါတယ်။ ဖြစ်နိုင်ရင်တော့ အပါ်ကလို ရောမသုံးပါနှင့်။"
+  },
+  {
+    "subTitle": "Length",
+    "body": "string မှာ character(အက္ခရာ) ဘယ်နှစ်လုံးရှိလဲသိချင်ရင် len() function ကိုသုံးပါ။",
+    "code": "abc = \"a b c\"\nprint(len(abc)) # output 5",
+    "language": "python",
+    "extra": " space လည်း character ပါ။"
+  },
+  {
+    "subTitle": "Case",
+    "body": "string ကိုအကုန်လုံး အကြီးပြောင်းချင်ရင် upper() function ကိုခေါ်ပါ။ အသေးအတွက် lower() function ကိုခေါ်ပါ။",
+    "code": "abc = \"abc\"\nxyz =\"XYZ\"\nprint(abc.upper()) #output ABC\nprint(xyz.lower()) #output xyz",
+    "language": "python",
+    "note": "နားလည်ရလွယ်ကူအောင် . dot သုံးတဲ့ function ကို (ခေါ်) လို့သုံးပြီး . မပါတဲ့ function ကို (သုံး) လို့ခေါ်ဆိုအသုံးပြုသွားပါမယ်။"
+  },
+  {
+    "subTitle": "Concatenation",
+    "body": "string တွေကို ပေါင်းတာကို concatenate လုပ်တယ်လို့ ခေါ်ပါတယ်။",
+    "code": "a = \"hel\"\nb =\"lo\"\nprint(a + b) #output hello",
+    "language": "python"
+  }
+]

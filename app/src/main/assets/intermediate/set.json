@@ -1,0 +1,27 @@
+[
+  {
+    "header": "Set",
+    "label": "Modified in 08-08-2023",
+    "body": "Set က Tuple လိုဘဲ element တွေကိုပြောင်းလို့မရတော့ဘူး။ List နှင့် Tuple မှာ ရှိပြီးသား element တွေကိုထပ်ရေးလို့ရတယ် Set မှာတော့မရတော့ဘူး။ Set ကို {curly brace} နှင့်ရေးပါ။ Set က element တွေကို အစဥ်လိုက်မထည့်ဘူး။",
+    "code": "fruits = {\"apple\", \"banana\", \"cherry\", \"apple\"}\nprint(fruits) # output {'banana', 'cherry', 'apple'}",
+    "language": "python"
+  },
+  {
+    "subTitle": "Adding Item",
+    "body": "Set ရဲ့ element တွေကိုပြောင်းလို့မရပေမဲ့ အသစ်ထပ်ထည့်လို့ရတယ်။ add() function ကို ခေါ်ပါ။",
+    "code": "fruits = {\"apple\", \"banana\", \"cherry\"}\nfruits.add(\"dorian\")",
+    "language": "python"
+  },
+  {
+    "subTitle": "Removing Item",
+    "body": "Set ရဲ့ element တွေကိုဖျက်ဖို့ remove() function ကို ခေါ်ပါ။",
+    "code": "fruits = {\"apple\", \"banana\", \"cherry\"}\nfruits.remove(\"cherry\")",
+    "language": "python",
+    "extra": "\"banana\" element ဖျက်ဖို့ remove ကိုခေါ်ပေမဲ့ \"banana\" မရှိဘူးဆိုရင် error တက်လိမ်မယ်။"
+  },
+  {
+    "body": "element ၕှိမရှိမသေချာလို့ error မတက်ဘဲဖျက်ချင်ရင် discard() function ကိုခေါ်ပါ။",
+    "code": "fruits = {\"apple\", \"banana\", \"cherry\"}\nfruits.discard(\"cherry\")",
+    "language": "python"
+  }
+]

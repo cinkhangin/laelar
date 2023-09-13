@@ -1,0 +1,57 @@
+[
+  {
+    "header": "Math",
+    "label": "Modified in 18-08-2023",
+    "body": "သင်္ချာနှင့်ဆိုင်တဲ့အရာတွေကို လုပ်ဆောင်နိုင်ဖို့ Built-in math function နှင့် Math Module ကိုသုံးရပါတယ်။ Module ဆိုတာ Code အစုလိုက်ထားတဲ့ package ကိုခေါ်တာပါ။"
+  },
+  {
+    "subTitle": "Min Max",
+    "body": "min() function နှင့် max() function တို့က အငယ်ဆုံး value(minimum) နှင့် အကြီးဆုံး value(maximum) ကိုရှာဖို့သုံးပါတယ်။",
+    "code": "x = min(1, 5, 8) # x = 1\ny = max(1, 5, 8) # y = 8",
+    "language": "python"
+  },
+  {
+    "subTitle": "Abs",
+    "body": "abs() function ကိုတော့ value တစ်ခုက အနုတ်(negative) value ဖြစ်တဲ့ခါ absolute(positive) value ကိုရဖို့သုံးပါတယ်။",
+    "code": "x = abs(-5)\nprint(x) # output 5",
+    "language": "python"
+  },
+  {
+    "subTitle": "Pow",
+    "body": "pow() function ကိုတော့ ကိန်းတစ်ခုကို ထပ်ကိန်းခြင်းရဲ့ value ကိုရဖို့သုံးပါတယ်။",
+    "code": "x = pow(2, 3) # same as x = 2 * 2 * 2\nprint(x) # output 8",
+    "language": "python"
+  },
+  {
+    "subTitle": "Round",
+    "body": "round() function ကိုတော့ float ကိုနီးစပ်ဆုံး int value ပြောင်းဖို့သုံးပါတယ်။",
+    "code": "x = round(1.6) # x = 2\ny = round(1.4) # y = 1",
+    "language": "python"
+  },
+  {
+    "title": "Math Module",
+    "body": "Math Module ကိုသုံးဖို့ import keyword ကိုသုံးပြီး import ရမှာပါ။",
+    "code": "import math",
+    "language": "python"
+  },
+  {
+    "subTitle": "Square root",
+    "body": "number တစ်ခုရဲ့ square root ကိုရှာဖို့ math.sqrt() ကိုသုံးလို့ရပါတယ်။",
+    "code": "x = math.sqrt(25)\nprint(x) # output 5.0",
+    "language": "python"
+  },
+  {
+    "subTitle": "Ceil and Floor",
+    "body": "math.ceil() နှင့် math.floor() ကိုတော့ float တွေကို လိုအပ်သလို round ဖို့သုံးပါတယ်။",
+    "code": "x = math.ceil(1.4)\ny = math.floor(1.4)\nprint(x) # output 2\nprint(y) # output 1",
+    "language": "python"
+  },
+  {
+    "subTitle": "Pi",
+    "body": "Pi ရဲ့ value လိုအပ်ရင် math.pi ကိုသုံးလို့ရပါတယ်။",
+    "code": "pi = math.pi\nprint(pi) # output 3.141592653589793",
+    "language": "python",
+    "note": "Math module ကိုသုံးမယ်ဆိုရင် import လုပ်ဖို့မမေ့ပါနှင့်။"
+  }
+
+]

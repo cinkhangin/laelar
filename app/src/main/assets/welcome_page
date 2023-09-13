@@ -1,0 +1,6 @@
+def flipcoin():
+    rnd = round(random.random())
+    result = "head"
+    if rnd == 1:
+        result = "tail"
+    return result

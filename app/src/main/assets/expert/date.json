@@ -1,0 +1,10 @@
+[
+  {
+    "header": "DateTime",
+    "label": "Modified in 18-08-2023",
+    "body": "နေ့ရက်ချိန်နာရီကလည်း programming မှာလိုအပ်တာမို့ Python မှာ built-in datetime module ထည့်ပေးထားပါတယ်။ datetime module ကိုသုံးဖို့ import datetime လုပ်ဖို့မမေ့ပါနှင့်။"
+  },
+  {
+   "injectionId": "date_example"
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "header": "Random",
+    "label": "Modified in 02-08-2023",
+    "body": "ကျပန်း(random) number တွေကတော့ Programming မှာမကြာခဏလိုအပ်တဲ့အတွက် Built-in random module ကိုအသုံးပြုနိုင်ပါတယ်။ random module ကို import ဖို့မမေ့ပါနှင့်။",
+    "code": "import random",
+    "language": "python"
+  },
+  {
+    "subTitle": "Random Float",
+    "body": "random.random() function က 0.0 ကနေ 1.0 ကြား random float number ကို ပေးပါမယ်။",
+    "code": "speed = random.random()\nprint(speed) # output (random float)",
+    "language": "python"
+  },
+  {
+    "subTitle": "Seed",
+    "body": "random.seed() function က random number လိုတိုင်း တူညီတဲ့ random value ပေးပါမယ်။",
+    "code": "random.seed(0)\nprint(random.random()) # output 0.8444218515250481\nrandom.seed(0)\nprint(random.random()) # output 0.8444218515250481\nrandom.seed(0)\nprint(random.random()) # output (random float)",
+    "language": "python"
+  },
+  {
+    "subTitle": "RndInt",
+    "body": "random.randint function က int တစ်ခုနှင့်တစ်ခုကြား random number ပေးပါမယ်။",
+    "code": "x = random.randint(5, 10)\nprint(x) # output (random int 5-10)",
+    "language": "python"
+  },
+  {
+    "subTitle": "Choice",
+    "body": "random.choice() function က list or tuple တွေရဲ့ random element တစ်ခုကိုပေးပါမယ်။",
+    "code": "x = random.choice([\"one\",\"two\",\"three\"])\nprint(x) # output (random element)",
+    "language": "python"
+  },
+  {
+    "title": "Example",
+    "body": "ခေါင်း(head) သို့ ပန်း(tail) ကို ပေးမယ့် function တစ်ခုကိုရေးကြည့်ရအောင်။ function နာမည်ကို flipcoin() လို့ပေးထားပါတယ်။",
+    "code": "def flipcoin():",
+    "language": "python"
+  },
+  {
+    "body": "random.random() နှင့် round() ကိုအသုံးပြုပြီးတော့ ခေါင်းအတွက် 0 နှင့် ပန်းအတွက် 1 ကို generate လုပ်ရအောင်။",
+    "code": "rnd = round(random.random())",
+    "language": "python"
+  },
+  {
+    "body": "if ကိုအသုံးပြုပြီးတော့ rnd ဖြစ်တဲ့ 0 နှင့် 1 ကို head and tail ပြောင်းရအောင်။ result ကို head ထားပြီးတော့ rnd က 1 ဆိုရင် tail ပြောင်းမယ်။ 0 ဆိုရင် ဘာမှပြောင်းမှာမဟုတ်ဘူးဆိုတော့ head ဘဲဖြစ်နေပါမယ်။",
+    "code": "result = \"head\"\nif rnd == 1:\n    result = \"tail\"",
+    "language": "python"
+  },
+  {
+    "body": "ပြီးရင် return ကိုအသုံးပြုပြီး result ကို return ရအောင်။",
+    "code": "return result",
+    "language": "python"
+  },
+  {
+    "body": "function တစ်ခုလုံးကိုရေးရအောင်",
+    "code": "import random\n\ndef flipcoin():\n    rnd = round(random.random())\n    result = \"head\"\n    if rnd == 1:\n        result = \"tail\"\n    return result",
+    "language": "python"
+  },
+  {
+    "body": "အပေါ်မှာတော့ concept ကိုရှင်းပြတဲ့အနေနှင့် ရေးတာပါ။ အတိုလေးလိုရင်တော့ ဒီလိုရေးနိုင်ပါတယ်။",
+    "code": "import random\n\ndef flipcoin(): return \"tail\" if random.randint(0, 1) == 1 else \"head\"",
+    "language": "python"
+  },
+  {
+    "body": "အတိုဆုံးရေးချင် in random.choice() ကိုသုံးလို့ရပါတယ်။",
+    "code": "import random\n\ndef flipcoin(): return random.choice([\"head\", \"tail\"])",
+    "language": "python"
+  },
+  {
+    "body": "lambda ကိုသုံးပြီး ပိုတိုအောင်ရေးရအောင်",
+    "code": "from random import choice\n\nflipcoin = lambda: choice([\"head\", \"tail\"])",
+    "language": "python",
+    "note": "\"ပိုတိုလေ ကောင်းလေ\" မဟုတ်ဘူးဆိုတာ သိထားပါ။ တိုတာထက် ဖတ်တဲ့ခါ နားလည်လွယ်တဲ့ code ကပိုကောင်းတယ်။"
+  },
+  {
+    "body": "function ကို print() လိုက်ရင် head သို့ tail ပြပါလိမ့်မယ်။",
+    "code": "print(flipcoin())",
+    "language": "python"
+  }
+]

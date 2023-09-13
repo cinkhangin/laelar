@@ -1,0 +1,29 @@
+[
+  {
+    "header": "Tuple",
+    "label": "Modified in 07-08-2023",
+    "body": "Tuple တွေကတော့ List တွေလိုပါဘဲ။ List နှင့်မတူတဲ့အရာကတော့ Tuple မှာ element တွေကိုပြောင်းလို့မရတော့ဘူး။ Tuple ကို (brackets) နှင့်ရေးပါ။ ",
+    "code": "fruits = (\"apple\", \"banana\", \"cherry\")",
+    "language": "python"
+  },
+  {
+    "subTitle": "One Item Tuple",
+    "body": "Tuple ကိုရေးတဲ့ချိန် element တစ်ခုဘဲရှိရင် comma ထည့်ပေးဖို့မမေ့ပါနှင့်။",
+    "code": "right_tuple = (\"tuple\",)\nprint(type(right_tuple)) # output <class 'tuple'>\nwrong_tuple = (\"not tuple\")\nprint(type(wrong_tuple)) # output <class 'str'>",
+    "language": "python"
+  },
+  {
+    "subTitle": "Immutable",
+    "body": "Tuple ရဲ့ element တွေက ပြောင်းလို့မရဘူး (Immutable) ဖြစ်တဲ့အတွက် ပြောင်းချင်ရင် list ဖြစ်အောင်လုပ် ပြီးတော့ ပြောင်းချင်တာပြောင်း ပြီးရင် tuple အဖြစ်ပြန်ပြောင်းပါ။ list ဖြစ်အောင်လုပ်ဖို့ list() constructor ကိုသုံးပါ။ Tuple အတွက်တော့ tuple() constructor ကိုသုံးပါ။",
+    "code": "fruits = (\"apple\", \"banana\", \"cherry\")\nlist_fruits = list(fruits)\nlist_fruits[0] = \"apricot\"\nfruits = tuple(list_fruits)\nprint(fruits) # output (\"apple\", \"banana\", \"cherry\")",
+    "language": "python",
+    "extra": "ကျန်တာအများစုကတော့ List နှင့်အတူတူပါဘဲ။"
+  },
+  {
+    "subTitle": "Unpacking",
+    "body": "Tuple ရဲ့ element အောက်ပါအတိုင်းယူလို့ရပါတယ်။ အဲလိုလုပ်တာကို unpacking လို့ခေါ်တယ်။",
+    "code": "fruits = (\"apple\", \"banana\", \"cherry\")\n(first, middle, last) = fruits\nprint(middle) # output banana",
+    "language": "python",
+    "extra": "ကျန်တာအများစုကတော့ List နှင့်အတူတူပါဘဲ။"
+  }
+]

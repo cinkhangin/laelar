@@ -1,0 +1,37 @@
+[
+  {
+    "header": "Data Types",
+    "label": "Modified in 03-08-2023",
+    "body": "Python မှာဆိုရင် Data type တွေရှိတယ်\nအလွယ်ဆုံး data type 4 ခုကိုကြည့်ရအောင်"
+  },
+  {
+    "subTitle": "1. int",
+    "body": "int ဆိုတာ Integer လို့ခေါ်တဲ့ ကိန်းြပည့်ရဲ့အတိုကောက်ပါ\n\nကိန်းပြည့်ဆိုတာကိုမသိဘူးဆိုရင် - ဒသမကိန်းမဟုတ်တဲ့ ကိန်းဂဏန်းတွေကိုခေါ်တာပါ",
+    "code": "age = 25\nprint(type(age))",
+    "language": "python"
+  },
+  {
+    "subTitle": "2. float",
+    "body": "ဒသမကိန်းတွေကိုတော့ float datatype လို့ခေါ်တယ်  Floating Point ရဲ့အတိုကောက်ပါ",
+    "code": "pi = 3.1415\nprint(type(pi))",
+    "language": "python"
+  },
+  {
+    "subTitle": "3. string",
+    "body": "စာလုံးတွေကို cs မှာ character လိုခေါ်တယ်။ စာတွေကိုတော့ string လို့ခေါ်တယ်။ စာလုံးအစဉ်လိုက်ကိုပြောချင်တာပါ",
+    "code": "name = 'pfm'\nprint(type(name))",
+    "language": "python",
+    "extra": "string value ကိုရေးတဲ့ခါ 'single quote' or \"double quote\" နဲ့ရေးရမှာဖြစ်တယ်"
+  },
+  {
+    "subTitle": "4. boolean",
+    "body": "boolean မှာတော့ တန်ဘိုးနှစ်ခုဘဲရှိတယ်\ntrue နှင့် false ဘဲဖြစ်တယ်",
+    "code": "happy = True\nsad = False\nprint(type(happy))",
+    "language": "python"
+  }
+]
+
+
+
+
+

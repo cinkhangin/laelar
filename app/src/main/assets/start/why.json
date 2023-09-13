@@ -1,0 +1,30 @@
+[
+  {
+    "header": "Why Python",
+    "label": "Modified in 20-08-2023",
+    "body": "ဘာကြောင့် Python ကိုလေ့လာရမှာလဲ?။"
+  },
+  {
+    "subTitle": "Simplicity",
+    "body": "Python က တော်တော်လေးရိုးရှင်းတဲ့ language တစ်ခုဖြစ်တာကြောင့် လေ့လာရတာလွယ်တယ်လို့ပြောလို့ရပါတယ်။ အောက်က Python နှင့် JavaScript ရဲ့ hello world program ကို နှိုင်းယှဥ်ကြည့်ပါ။",
+    "code": "# Python\nprint('hello, world!')",
+    "language": "python"
+  },
+  {
+    "code": "// JavaScript\nconsole.log('hello, world!');",
+    "language": "javascript",
+    "extra": "သိပ်မကွာသလိုဖြစ်ပေမဲ့ console.log ကြီးထက် print ဆိုတာက ပိုရိုးရှင်းသလို ပိုလည်းလွယ်ပါတယ်။"
+  },
+  {
+    "subTitle": "Ecosystem",
+    "body": "Python ရဲ့ Ecosystem ကတော်တော် ကျယ်ပြန့်တာဖြစ်လို့ လိုအပ်တဲ့ library နှင့် framework တွေကအဆင်သင့်ရှိပြီးသားဖြစ်ပါတယ်။"
+  },
+  {
+    "subTitle": "Job",
+    "body": "Python ကိုနေရာတကာအသုံးပြုတဲ့အတွက် အလုက်အခွင့်အလမ်းကလည်းမရှားပါဘူး။"
+  },
+  {
+    "subTitle": "Suggestion",
+    "body": "Python developer ဖြစ်ဖို့ရည်ရွယ်ချက်မရှိရင်တောင် Python language ကို programmer တစ်ယောက်အနေနှင့် မဖြစ်မနေသိထားသင့်ပါတယ်။ ဒါကြောင့် MIT တို့လိုကျောင်းမှာ programming ကိုမိတ်ဆက်ဖို့ Python ကိုဘဲအသုံးပြုတာဖြစ်ပါတယ်။"
+  }
+]

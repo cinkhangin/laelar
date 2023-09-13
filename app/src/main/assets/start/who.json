@@ -1,0 +1,15 @@
+[
+  {
+    "header": "Who uses Python",
+    "label": "Modified in 20-08-2023",
+    "body": "Python ကို နေရာတော်တော်များများမှာအသုံးပြုကြတယ်။ အထူးသဖြင့် web developer တွေ၊ data scientist တွေ၊ programming ကျောင်းဆရာတွေကအစ game developer တွေအသုံးပြုကြပါတယ်။"
+  },
+  {
+    "subTitle": "AI",
+    "body": "ခု AI ခေတ်မှာဆိုရင် python frameworks တွေဖြစ်တဲ့ TensorFlow နှင့် Pytorch တွေကိုလည်း Machine Learning နှင့် AI အတွက်အသုံးပြုကြပါတယ်။"
+  },
+  {
+    "subTitle": "Scripting",
+    "body": "setup လုပ်ရတာ တော်တော်လေးလွယ်တာကြောင့် Automation နှင့် scripting တွေအတွက်လည်း အသုံးများတယ်။"
+  }
+]
