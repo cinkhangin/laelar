@@ -6,11 +6,11 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.laelar.app.R
 import com.laelar.app.databinding.FragmentWelcomeBinding
+import com.laelar.app.requireDeviceId
 import com.laelar.core.AppIds
 import com.laelar.core.LicenseManager
 import com.laelar.core.adapters.BlockAdapter
 import com.laelar.core.assets.Icons
-import com.laelar.core.deviceId
 import com.laelar.core.models.Block
 import com.laelar.core.openMessenger
 import com.naulian.anhance.createLLManager
@@ -74,14 +74,14 @@ class WelcomeFragment : Fragment(R.layout.fragment_welcome) {
             ),
 
             Block(
-                code = requireContext().deviceId,
+                code = requireDeviceId(),
                 copyable = true,
                 language = "Device ID",
                 button = "Continue",
                 icon = Icons.messenger,
                 link = "108409453913492",
-                onLink = {link -> openMessenger(link)},
-                extra="Device ID ကို copy ပြီး page messenger မှတစ်ဆင့်စရင်းသွင်းပါ။ စရင်းသွင်းပြီးရင် continue ကိုနှိပ်ပြီးစလေ့လာလို့ရပါပြီ။",
+                onLink = { link -> openMessenger(link) },
+                extra = "Device ID ကို copy ပြီး page messenger မှတစ်ဆင့်စရင်းသွင်းပါ။ စရင်းသွင်းပြီးရင် continue ကိုနှိပ်ပြီးစလေ့လာလို့ရပါပြီ။",
                 onClick = { login() }
             ),
         )
@@ -101,7 +101,7 @@ class WelcomeFragment : Fragment(R.layout.fragment_welcome) {
 
     private fun login() {
         binding.loadScreen.show()
-        val deviceId = requireContext().deviceId
+        val deviceId = requireDeviceId()
         LicenseManager.check(AppIds.app, deviceId) { result ->
             binding.loadScreen.hide()
             result.onSuccess { navigateTo(mainFragment) }

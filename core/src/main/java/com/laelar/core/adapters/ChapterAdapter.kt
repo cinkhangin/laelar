@@ -43,7 +43,8 @@ class ChapterAdapter : ListAdapter<Chapter, ChapterAdapter.ItemViewHolder>(ItemD
                 textTitle.text = item.title
                 textBody.text = description
 
-                imageIndicator.isVisible = item.new
+                redIndicator.isVisible = item.new
+                yellowIndicator.isVisible = item.changed
 
                 root.setCardBackgroundColor(bgColor)
                 root.onClick { listener?.invoke(item) }

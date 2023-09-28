@@ -41,7 +41,8 @@ class BookAdapter : ListAdapter<Book, BookAdapter.ItemViewHolder>(ItemDiffCallBa
                 indicator.max = item.chapters.size
                 indicator.progress = progress
 
-                imageIndicator.isVisible = item.new
+                redIndicator.isVisible = item.new
+                yellowIndicator.isVisible = item.changed
 
                 root.onClick { listener?.invoke(item) }
             }

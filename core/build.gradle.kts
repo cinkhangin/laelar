@@ -56,7 +56,7 @@ dependencies {
     implementation("com.google.firebase:firebase-firestore-ktx")
 
     //naulian
-    implementation("com.github.cinkhangin:anhance:1.3.1")
+    implementation("com.github.cinkhangin:anhance:1.3.3")
     implementation("com.github.cinkhangin:firex:1.2.0")
     implementation("com.github.cinkhangin:glow:0.2.0")
 
@@ -74,7 +74,7 @@ afterEvaluate {
             create<MavenPublication>("release") {
                 groupId = "com.github.cinkhangin"
                 artifactId = "laelar"
-                version = "0.0.3"
+                version = "0.0.4"
                 from(components["release"])
             }
         }

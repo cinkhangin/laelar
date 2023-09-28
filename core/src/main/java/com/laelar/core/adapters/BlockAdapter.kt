@@ -9,6 +9,7 @@ import androidx.core.view.isVisible
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.laelar.core.R
 import com.laelar.core.databinding.ViewBlockBinding
 import com.laelar.core.glow
 import com.laelar.core.models.Block
@@ -42,6 +43,9 @@ class BlockAdapter : ListAdapter<Block, BlockAdapter.ItemViewHolder>(ItemDiffCal
             val imageUri = item.imageUri(context)
 
             binding.apply {
+                val color = if(item.changed) R.color.changed else R.color.background
+                root.setBackgroundResource(color)
+
                 //setVisibility
                 textHeader.isVisible = item.header.isNotEmpty()
                 textTitle.isVisible = item.title.isNotEmpty()

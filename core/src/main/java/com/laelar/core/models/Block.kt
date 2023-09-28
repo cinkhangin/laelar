@@ -14,7 +14,7 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class Block(
-    val id: Int = 0,
+    val id: String = "",
 
     val header: String = "",
     val centered: Boolean = false,
@@ -64,6 +64,8 @@ data class Block(
     val output: String = "",
 
     val injectionId: String = "",
+    val version: Int = 0,
+    val changed: Boolean = false,
 ) {
     val quoteText
         get() = """

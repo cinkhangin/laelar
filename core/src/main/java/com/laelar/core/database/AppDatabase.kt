@@ -4,9 +4,10 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.laelar.core.models.BlockData
 import com.laelar.core.models.Chapter
 
-@Database(entities = [Chapter::class], version = 3, exportSchema = false)
+@Database(entities = [Chapter::class, BlockData::class], version = 4, exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun dao(): Dao
 

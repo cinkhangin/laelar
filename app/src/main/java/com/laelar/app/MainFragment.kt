@@ -18,6 +18,9 @@ import kotlinx.coroutines.CoroutineScope
 
 @AndroidEntryPoint
 class MainFragment : Fragment(R.layout.fragment_main) {
+    @Suppress("unused")
+    private val tag = MainFragment::class.java.simpleName
+
     private lateinit var itemAdapter: BookAdapter
     private lateinit var loManager: LinearLayoutManager
 

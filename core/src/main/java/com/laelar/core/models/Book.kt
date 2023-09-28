@@ -17,5 +17,6 @@ data class Book(
     val description: String = "",
 
     val chapters: List<Chapter> = emptyList(),
-    val new: Boolean = true
+    val new: Boolean = true,
+    val changed: Boolean = false,
 )

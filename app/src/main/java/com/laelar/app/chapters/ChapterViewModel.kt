@@ -7,6 +7,7 @@ import com.laelar.app.App
 import com.laelar.core.database.AppDatabase
 import com.laelar.core.database.DataManager
 import com.laelar.core.database.DataManager.loadChapter
+import com.laelar.core.models.Block
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
@@ -24,6 +25,7 @@ class ChapterViewModel @Inject constructor(app: Application) : AndroidViewModel(
     private var syncJob: Job? = null
     private var daoJob: Job? = null
     private var viewJob: Job? = null
+    private var viewJob2: Job? = null
 
     fun loadChapter(chapterId: String) {
         DataManager.clearChapter()
@@ -47,10 +49,17 @@ class ChapterViewModel @Inject constructor(app: Application) : AndroidViewModel(
         }
     }
 
-    fun view(chapterId: String){
+    fun view(chapterId: String) {
         viewJob?.cancel()
         viewJob = viewModelScope.launch {
             DataManager.view(dao, chapterId)
+        }
+    }
+
+    fun viewBlocks(list: List<Block>) {
+        viewJob2?.cancel()
+        viewJob2 = viewModelScope.launch {
+            DataManager.viewBlocks(dao, list)
         }
     }
 }

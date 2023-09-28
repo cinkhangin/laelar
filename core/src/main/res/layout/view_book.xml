@@ -45,7 +45,7 @@
             android:layout_marginTop="12dp"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@id/imageIndicator"
+            app:layout_constraintEnd_toStartOf="@id/red_indicator"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageCourse"
             tools:text="@string/lorem_short" />
@@ -65,11 +65,22 @@
             tools:text="@string/lorem_normal" />
 
         <ImageView
-            android:id="@+id/imageIndicator"
+            android:id="@+id/red_indicator"
             android:layout_width="12dp"
             android:layout_height="12dp"
             android:layout_margin="12dp"
-            android:src="@drawable/circle"
+            android:src="@drawable/dot_red"
+            app:layout_constraintBottom_toBottomOf="@id/textTitle"
+            app:layout_constraintEnd_toStartOf="@id/yellow_indicator"
+            app:layout_constraintTop_toTopOf="@id/textTitle"
+            android:contentDescription="@string/new_indicator" />
+
+        <ImageView
+            android:id="@+id/yellow_indicator"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_margin="12dp"
+            android:src="@drawable/dot_yellow"
             app:layout_constraintBottom_toBottomOf="@id/textTitle"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/textTitle"

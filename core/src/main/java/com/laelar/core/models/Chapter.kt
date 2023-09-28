@@ -18,6 +18,7 @@ data class Chapter(
 
     val learned: Boolean = false,
     val new: Boolean = true,
+    val changed: Boolean = false,
 ) {
     @Ignore
     var blocks: List<Block> = emptyList()

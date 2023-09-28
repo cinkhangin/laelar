@@ -67,14 +67,19 @@ class ChapterFragment : Fragment(R.layout.fragment_chapter) {
 
             blocks.add(action)
             itemAdapter.submitList(blocks)
-
             binding.topAppbar.title = if (chapter.learned) "Learned ☺️" else "😃"
+
             viewModel.view(chapterId)
+            viewModel.viewBlocks(chapter.blocks)
         }
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
         viewBinding = null
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
     }
 }

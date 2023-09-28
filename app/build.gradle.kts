@@ -95,7 +95,7 @@ dependencies {
     implementation("androidx.core:core-splashscreen:1.0.1")
 
     //anhance
-    implementation("com.github.cinkhangin:anhance:1.3.1")
+    implementation("com.github.cinkhangin:anhance:1.3.3")
     implementation("com.github.cinkhangin:firex:1.2.0")
     implementation("com.github.cinkhangin:glow:0.2.0")
 

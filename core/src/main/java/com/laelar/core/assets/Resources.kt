@@ -3,12 +3,14 @@ package com.laelar.core.assets
 import android.content.Context
 import com.laelar.core.database.AppDatabase
 import com.laelar.core.models.Block
+import com.laelar.core.models.BlockData
 import com.laelar.core.models.Book
 import com.laelar.core.models.Chapter
 import com.naulian.anhance.observe
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.combine
 
 object Resources {
     @Suppress("unused")
@@ -20,7 +22,8 @@ object Resources {
 
     private val chaptersMap = hashMapOf<String, List<Chapter>>()
     private val chapterMap = hashMapOf<String, Chapter>()
-    private val blocksMap = hashMapOf<String, List<Block>>()
+
+    private val blockListMap = hashMapOf<String, List<Block>>()
 
     private var loaded = false
     val shouldPostPone get() = !loaded
@@ -36,52 +39,68 @@ object Resources {
             val chapterList = Chapters.load(context, book.path)
             chaptersMap[book.id] = chapterList
 
-            val newBook = book.copy(chapters = chapterList)
-            newBookList.add(newBook)
-
             chapterList.forEach { chapter ->
                 val blockList = Blocks.load(context, chapter.path, injectMap)
-                blocksMap[chapter.id] = blockList
+                blockListMap[chapter.id] = blockList
                 chapterMap[chapter.id] = chapter
             }
+
+            val newBook = book.copy(chapters = chapterList)
+            newBookList.add(newBook)
         }
 
         bookList = newBookList.toList()
         loaded = true
 
-        observe(dao.chapterFlow()) { progress ->
-            if (progress.isEmpty()) {
-                mutableBooks.value = bookList
-                return@observe
-            }
+        val flowData = dao.chaptersFlow()
+            .combine(dao.blocksFlow()) { c, b -> Pair(c, b) }
 
-            val progressMap = progress.associateBy { it.id }
-            newBookList.clear()
-
-            bookList.forEach { book ->
-                val newChapterList = mutableListOf<Chapter>()
-                book.chapters.forEach { chapter ->
-
-                    val newChapter = chapter.copy(
-                        learned = progressMap[chapter.id]?.learned ?: false,
-                        new = !progressMap.containsKey(chapter.id)
-                    )
-                    newChapterList.add(newChapter)
-                }
-                val newBook = book.copy(
-                    chapters = newChapterList,
-                    new = newChapterList.any { it.new }
-                )
-                newBookList.add(newBook)
-                chaptersMap[book.id] = newChapterList
-            }
-
-            bookList = newBookList.toList()
-            mutableBooks.value = bookList
+        observe(flowData) {
+            processData(it.first, it.second)
         }
     }
 
+    private fun processData(chapterData: List<Chapter>, blockData: List<BlockData>) {
+        val blockMap = blockData.associateBy { it.id }
+        val progressMap = chapterData.associateBy { it.id }
+        val newBookList = arrayListOf<Book>()
+
+        bookList.forEach { book ->
+            val newChapterList = mutableListOf<Chapter>()
+            book.chapters.forEach { chapter ->
+
+                val blocks = blockListMap[chapter.id]?.map {
+                    val version = blockMap[it.id]?.version ?: 0
+                    val isChanged = it.version != 0 && it.version > version
+                    it.copy(changed = isChanged)
+                } ?: emptyList()
+
+                val newChapter = chapter.copy(
+                    learned = progressMap[chapter.id]?.learned ?: false,
+                    new = !progressMap.containsKey(chapter.id),
+                    changed = blocks.any { it.changed }
+                )
+
+                blockListMap[chapter.id] = blocks
+                newChapter.blocks = blocks
+                newChapterList.add(newChapter)
+            }
+
+            val newBook = book.copy(
+                chapters = newChapterList,
+                new = newChapterList.any { it.new },
+                changed = newChapterList.any { it.changed }
+            )
+            newBookList.add(newBook)
+            chaptersMap[book.id] = newChapterList
+        }
+
+        bookList = newBookList.toList()
+        mutableBooks.value = bookList
+    }
+
     fun getChapters(bookId: String) = chaptersMap[bookId] ?: emptyList()
+
     //fun getChapter(chapterId: String) = chapterMap[chapterId] ?: Chapter(chapterId)
-    fun getBlocks(chapterId: String) = blocksMap[chapterId] ?: emptyList()
+    fun getBlocks(chapterId: String) = blockListMap[chapterId] ?: emptyList()
 }

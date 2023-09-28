@@ -4,6 +4,8 @@ import android.content.Context
 import com.laelar.core.assets.Blocks
 import com.laelar.core.assets.Books
 import com.laelar.core.assets.Chapters
+import com.laelar.core.models.Block
+import com.laelar.core.models.BlockData
 import com.laelar.core.models.Chapter
 import com.naulian.anhance.observe
 import kotlinx.coroutines.CoroutineScope
@@ -73,5 +75,12 @@ object DataManager {
         dao.getChapter(chapterId)?.let {
             return
         } ?: dao.insert(chapter)
+    }
+
+    suspend fun viewBlocks(dao: Dao, list: List<Block>) {
+        list.filter { it.changed }.forEach {
+            val blockData = BlockData(id = it.id, version = it.version)
+            dao.insert(blockData)
+        }
     }
 }
