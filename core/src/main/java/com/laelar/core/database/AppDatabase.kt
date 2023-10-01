@@ -21,6 +21,9 @@ abstract class AppDatabase : RoomDatabase() {
             val migration3to4 = object : Migration(3, 4) {
                 override fun migrate(database: SupportSQLiteDatabase) {
                     database.execSQL(
+                        "ALTER TABLE chapters ADD COLUMN changed INTEGER NOT NULL DEFAULT 0"
+                    )
+                    database.execSQL(
                         """
                         CREATE TABLE IF NOT EXISTS blocks (
                         id TEXT PRIMARY KEY NOT NULL,
