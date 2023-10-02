@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primary">#828DF8</color>
+    <color name="primary">#8BC34A</color>
     <color name="onPrimary">#FFFFFF</color>
     <color name="primaryContainer">#E6E8FF</color>
     <color name="onPrimaryContainer">#283288</color>
@@ -10,7 +10,7 @@
     <color name="secondaryContainer">#E6E8FF</color>
     <color name="onSecondaryContainer">#283288</color>
 
-    <color name="tertiary">#828DF8</color>
+    <color name="tertiary">#DCEDC8</color>
     <color name="onTertiary">#FFFFFF</color>
     <color name="tertiaryContainer">#E6E8FF</color>
     <color name="onTertiaryContainer">#283288</color>

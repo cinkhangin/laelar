@@ -6,6 +6,7 @@ import androidx.core.view.isVisible
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.laelar.core.R
 import com.laelar.core.databinding.ViewBookBinding
 import com.laelar.core.models.Book
 import com.naulian.anhance.onClick
@@ -26,6 +27,16 @@ class BookAdapter : ListAdapter<Book, BookAdapter.ItemViewHolder>(ItemDiffCallBa
 
     inner class ItemViewHolder(private val binding: ViewBookBinding) :
         RecyclerView.ViewHolder(binding.root) {
+        private val context = binding.root.context
+
+        private val defaultBg = context.getColor(R.color.tertiary)
+        private val attrColor = intArrayOf(com.google.android.material.R.attr.colorTertiary)
+        private val typedArray = context.theme.obtainStyledAttributes(attrColor)
+        private val primaryColor = typedArray.getColor(0, defaultBg)
+
+        init {
+            typedArray.recycle()
+        }
 
         fun bind(position: Int) {
             val item = getItem(position)
@@ -38,6 +49,7 @@ class BookAdapter : ListAdapter<Book, BookAdapter.ItemViewHolder>(ItemDiffCallBa
                 textTitle.text = item.name
                 textBody.text = item.description
 
+                indicator.setIndicatorColor(primaryColor)
                 indicator.max = item.chapters.size
                 indicator.progress = progress
 

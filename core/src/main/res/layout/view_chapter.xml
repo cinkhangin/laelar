@@ -43,7 +43,7 @@
             android:layout_marginStart="12dp"
             android:layout_marginTop="12dp"
             android:layout_marginBottom="12dp"
-            android:layout_marginEnd="4dp"
+            android:layout_marginEnd="12dp"
             android:src="@drawable/dot_red"
             app:layout_constraintBottom_toBottomOf="@id/textTitle"
             app:layout_constraintEnd_toStartOf="@id/yellow_indicator"

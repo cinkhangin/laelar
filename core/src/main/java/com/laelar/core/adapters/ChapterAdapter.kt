@@ -31,11 +31,19 @@ class ChapterAdapter : ListAdapter<Chapter, ChapterAdapter.ItemViewHolder>(ItemD
 
         private val context: Context = binding.root.context
         private val defaultBg = context.getColor(R.color.surface)
-        private val learnedBg = context.getColor(R.color.indicator)
+        private val learnedBg = context.getColor(R.color.tertiary)
+
+        private val attrColor = intArrayOf(com.google.android.material.R.attr.colorTertiary)
+        private val typedArray = context.theme.obtainStyledAttributes(attrColor)
+        private val primaryColor = typedArray.getColor(0, learnedBg)
+
+        init {
+            typedArray.recycle()
+        }
 
         fun bind(position: Int) {
             val item = getItem(position)
-            val bgColor = if(item.learned) learnedBg else defaultBg
+            val bgColor = if(item.learned) primaryColor else defaultBg
 
             val description = if(item.learned) "Learned" else randomEmoji()
 
