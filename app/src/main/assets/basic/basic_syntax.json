@@ -7,7 +7,9 @@
   {
     "subTitle": "Hello World",
     "code": "print(\"Hello, World!\")\n\n# output\n# Hello, World!",
-    "language": "python"
+    "language": "python",
+    "codeName": "Main.py",
+    "copyable": true
   },
   {
     "subTitle": "Indentation",

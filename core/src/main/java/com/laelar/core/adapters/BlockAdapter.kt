@@ -38,12 +38,21 @@ class BlockAdapter : ListAdapter<Block, BlockAdapter.ItemViewHolder>(ItemDiffCal
 
         val context: Context = binding.root.context
 
+        private val defaultBg = context.getColor(R.color.tertiary)
+        private val attrColor = intArrayOf(com.google.android.material.R.attr.colorTertiary)
+        private val typedArray = context.theme.obtainStyledAttributes(attrColor)
+        private val primaryColor = typedArray.getColor(0, defaultBg)
+
+        init {
+            typedArray.recycle()
+        }
+
         fun bind(position: Int) {
             val item = getItem(position)
             val imageUri = item.imageUri(context)
 
             binding.apply {
-                val color = if(item.changed) R.color.changed else R.color.background
+                val color = if (item.changed) R.color.changed else R.color.background
                 root.setBackgroundResource(color)
 
                 //setVisibility
@@ -70,8 +79,8 @@ class BlockAdapter : ListAdapter<Block, BlockAdapter.ItemViewHolder>(ItemDiffCal
                 fieldEdit.isVisible = item.hint.isNotEmpty()
                 buttonAction.isVisible = item.button.isNotEmpty()
 
-                textLanguage.isVisible = item.copyable
-                buttonCopy.isVisible = item.copyable
+                textLanguage.isVisible = item.codeName.isNotEmpty()
+                buttonCopy.isVisible = item.copyable || item.codeName.isNotEmpty()
 
                 //setValue
                 textHeader.text = item.header
@@ -96,6 +105,7 @@ class BlockAdapter : ListAdapter<Block, BlockAdapter.ItemViewHolder>(ItemDiffCal
                     textCode.text = colored.spanned
                 }
 
+                textLanguage.setBackgroundColor(primaryColor)
                 textLanguage.text = item.codeName.ifEmpty { item.language }
                 buttonCopy.setIconResource(item.copyIcon)
                 buttonCopy.onClick {
