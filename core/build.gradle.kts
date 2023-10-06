@@ -58,7 +58,7 @@ dependencies {
     //naulian
     implementation("com.github.cinkhangin:anhance:1.3.4")
     implementation("com.github.cinkhangin:firex:1.2.0")
-    implementation("com.github.cinkhangin:glow:0.2.0")
+    implementation("com.github.cinkhangin:glow:1.0.0")
 
     //room
     implementation("androidx.room:room-runtime:2.5.2")
