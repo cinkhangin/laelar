@@ -17,6 +17,7 @@ import com.naulian.anhance.copyString
 import com.naulian.anhance.loadWithGlide
 import com.naulian.anhance.onClick
 import com.naulian.anhance.onLongClick
+import com.naulian.anhance.setTextColorRes
 import com.naulian.anhance.textTrim
 import com.naulian.glow.CodeTheme
 
@@ -79,8 +80,9 @@ class BlockAdapter : ListAdapter<Block, BlockAdapter.ItemViewHolder>(ItemDiffCal
                 fieldEdit.isVisible = item.hint.isNotEmpty()
                 buttonAction.isVisible = item.button.isNotEmpty()
 
-                textLanguage.isVisible = item.codeName.isNotEmpty()
-                buttonCopy.isVisible = item.copyable || item.codeName.isNotEmpty()
+                val visibleCodeHeader = item.copyable || item.codeName.isNotEmpty()
+                textLanguage.isVisible = visibleCodeHeader
+                buttonCopy.isVisible = visibleCodeHeader
 
                 //setValue
                 textHeader.text = item.header
@@ -98,6 +100,10 @@ class BlockAdapter : ListAdapter<Block, BlockAdapter.ItemViewHolder>(ItemDiffCal
                 btnLink.text = item.hyper
                 btnLink.icon = ContextCompat.getDrawable(context, item.icon)
                 btnLink.onClick { item.onLink?.invoke(item.link) }
+
+                if(item.language.lowercase() == "link"){
+                    textCode.setTextColorRes(R.color.primary)
+                }else textCode.setTextColorRes(R.color.onBackground)
 
                 textCode.text = item.codeSpanned
                 if (item.codeSpanned.isEmpty()) {

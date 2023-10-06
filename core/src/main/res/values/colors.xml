@@ -33,7 +33,7 @@
     <color name="primaryInverse">#90CAF9</color>
 
     <color name="background">#F2F3F4</color>
-    <color name="onBackground">#130E00</color>
+    <color name="onBackground">#1F1F1F</color>
 
     <color name="outline">#D1D1D1</color>
     <color name="shadow">#000000</color>

@@ -9,6 +9,7 @@
     "body": "Integrated Development Environment ဆိုတာ text editor သက်သက်မဟုတ်ဘဲ code ရေးတာအထောက်အကူဖြစ်စေဖို့အထူးလုပ်ထားတဲ့ software ပါ။ Python Code ကိုရေးဖို့ Jetbrains ကထုပ်တဲ့ PyCharm IDE (Community Version)ကို recommend လုပ်ပါတယ်။",
     "code": "https://www.jetbrains.com/pycharm/download/",
     "copyable": true,
-    "language": "python"
+    "language": "link",
+    "codeName": "Link"
   }
 ]
