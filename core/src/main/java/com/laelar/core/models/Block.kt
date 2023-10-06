@@ -44,6 +44,7 @@ data class Block(
     val codeSpanned: Spanned = "".html(),
     @DrawableRes
     val copyIcon: Int = Icons.copy,
+    val codeName: String = "",
     val language: String = "",
     val copyable: Boolean = false,
     val selectable: Boolean = true,

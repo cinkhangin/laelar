@@ -96,7 +96,7 @@ class BlockAdapter : ListAdapter<Block, BlockAdapter.ItemViewHolder>(ItemDiffCal
                     textCode.text = colored.spanned
                 }
 
-                textLanguage.text = item.language
+                textLanguage.text = item.codeName.ifEmpty { item.language }
                 buttonCopy.setIconResource(item.copyIcon)
                 buttonCopy.onClick {
                     item.onCopy?.invoke(item) ?: context.copyString(item.code)

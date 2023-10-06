@@ -4,7 +4,6 @@ plugins {
     id("kotlin-parcelize")
     id("androidx.navigation.safeargs.kotlin")
     id("dagger.hilt.android.plugin")
-    id("kotlin-kapt")
     id("com.google.gms.google-services")
     id("org.jetbrains.kotlin.plugin.serialization")
     id("com.google.devtools.ksp")
@@ -81,9 +80,9 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:$lifecycleVersion")
 
     //dagger hilt
-    val hiltVersion = "2.45"
+    val hiltVersion = "2.48"
     implementation("com.google.dagger:hilt-android:$hiltVersion")
-    kapt("com.google.dagger:hilt-compiler:$hiltVersion")
+    ksp("com.google.dagger:hilt-compiler:$hiltVersion")
 
     //glide
     implementation("com.github.bumptech.glide:glide:4.15.1")
@@ -95,7 +94,7 @@ dependencies {
     implementation("androidx.core:core-splashscreen:1.0.1")
 
     //anhance
-    implementation("com.github.cinkhangin:anhance:1.3.3")
+    implementation("com.github.cinkhangin:anhance:1.3.4")
     implementation("com.github.cinkhangin:firex:1.2.0")
     implementation("com.github.cinkhangin:glow:0.2.0")
 
@@ -112,6 +111,3 @@ dependencies {
     )
     implementation(project(":core"))
 }
-
-// Allow references to generated code
-kapt { correctErrorTypes = true }

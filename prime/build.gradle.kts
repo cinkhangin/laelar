@@ -57,7 +57,7 @@ dependencies {
     implementation("com.google.firebase:firebase-firestore-ktx")
 
     //anhance
-    implementation("com.github.cinkhangin:anhance:1.3.3")
+    implementation("com.github.cinkhangin:anhance:1.3.4")
     implementation("com.github.cinkhangin:firex:1.2.0")
 
     implementation(
