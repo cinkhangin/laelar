@@ -56,7 +56,7 @@ dependencies {
     implementation("androidx.preference:preference-ktx:1.2.1")
 
     //material
-    implementation("com.google.android.material:material:1.9.0")
+    implementation("com.google.android.material:material:1.10.0")
 
     //constraint
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
@@ -96,7 +96,7 @@ dependencies {
     //anhance
     implementation("com.github.cinkhangin:anhance:1.3.4")
     implementation("com.github.cinkhangin:firex:1.2.0")
-    implementation("com.github.cinkhangin:glow:0.2.0")
+    implementation("com.github.cinkhangin:glow:1.0.2")
 
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
 
