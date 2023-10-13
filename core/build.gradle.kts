@@ -74,7 +74,7 @@ afterEvaluate {
             create<MavenPublication>("release") {
                 groupId = "com.github.cinkhangin"
                 artifactId = "laelar"
-                version = "0.1.0"
+                version = "0.1.1"
                 from(components["release"])
             }
         }

@@ -25,7 +25,12 @@ object LicenseManager {
         }
 
         fetch(appId, deviceId) { result: Result<Unique> ->
-            result.onFailure { action(result) }
+            result.onFailure {
+                fetch(AppIds.member, deviceId) { result2: Result<Unique> ->
+                    result2.onFailure { action(result2) }
+                    result2.onSuccess { login(it, action) }
+                }
+            }
             result.onSuccess { login(it, action) }
         }
     }
