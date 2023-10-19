@@ -60,6 +60,7 @@ class ChapterFragment : Fragment(R.layout.fragment_chapter) {
     private fun CoroutineScope.observeChanges() {
         observe(viewModel.chapter) { chapter ->
             val blocks = chapter.blocks.toMutableList()
+            if(blocks.isEmpty()) return@observe
 
             val action = if (chapter.learned)
                 Block(button = "Unlearned", onClick = { viewModel.unlearned(chapterId) })
