@@ -55,10 +55,10 @@ dependencies {
     implementation("com.google.firebase:firebase-auth-ktx")
     implementation("com.google.firebase:firebase-firestore-ktx")
 
-    //naulian
+    //cinkhangin
     implementation("com.github.cinkhangin:anhance:1.3.4")
     implementation("com.github.cinkhangin:firex:1.2.0")
-    implementation("com.github.cinkhangin:glow:1.0.2")
+    implementation("com.github.cinkhangin:glow:1.1.0")
 
     //room
     implementation("androidx.room:room-runtime:2.5.2")
@@ -74,7 +74,7 @@ afterEvaluate {
             create<MavenPublication>("release") {
                 groupId = "com.github.cinkhangin"
                 artifactId = "laelar"
-                version = "0.1.1"
+                version = "0.2.0"
                 from(components["release"])
             }
         }

@@ -10,7 +10,6 @@ import com.laelar.core.R
 import com.laelar.core.databinding.ViewBookBinding
 import com.laelar.core.models.Book
 import com.naulian.anhance.onClick
-import com.naulian.anhance.setCardBgHex
 
 class BookAdapter : ListAdapter<Book, BookAdapter.ItemViewHolder>(ItemDiffCallBack()) {
     private var listener: ((Book) -> Unit)? = null
@@ -43,7 +42,6 @@ class BookAdapter : ListAdapter<Book, BookAdapter.ItemViewHolder>(ItemDiffCallBa
             val progress = item.chapters.count { it.learned }
 
             binding.apply {
-                root.setCardBgHex("#ffffff")
                 imageCourse.isVisible = false
                 //imageCourse.loadWithGlide(item.image)
                 textTitle.text = item.name

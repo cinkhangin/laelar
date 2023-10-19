@@ -38,6 +38,7 @@ class BlockAdapter : ListAdapter<Block, BlockAdapter.ItemViewHolder>(ItemDiffCal
         RecyclerView.ViewHolder(binding.root) {
 
         val context: Context = binding.root.context
+        val codeTheme = CodeTheme.default(context)
 
         private val defaultBg = context.getColor(R.color.tertiary)
         private val attrColor = intArrayOf(com.google.android.material.R.attr.colorTertiary)
@@ -107,7 +108,7 @@ class BlockAdapter : ListAdapter<Block, BlockAdapter.ItemViewHolder>(ItemDiffCal
 
                 textCode.text = item.codeSpanned
                 if (item.codeSpanned.isEmpty()) {
-                    val colored = item.glow(CodeTheme.kotlinLight)
+                    val colored = item.glow(codeTheme)
                     textCode.text = colored.spanned
                 }
 
