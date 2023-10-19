@@ -1,6 +1,7 @@
 package com.laelar.core.adapters
 
 import android.content.Context
+import android.graphics.Color
 import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -38,7 +39,7 @@ class BlockAdapter : ListAdapter<Block, BlockAdapter.ItemViewHolder>(ItemDiffCal
         RecyclerView.ViewHolder(binding.root) {
 
         val context: Context = binding.root.context
-        val codeTheme = CodeTheme.default(context)
+        private val codeTheme = CodeTheme.default(context)
 
         private val defaultBg = context.getColor(R.color.tertiary)
         private val attrColor = intArrayOf(com.google.android.material.R.attr.colorTertiary)
@@ -106,6 +107,7 @@ class BlockAdapter : ListAdapter<Block, BlockAdapter.ItemViewHolder>(ItemDiffCal
                     textCode.setTextColorRes(R.color.primary)
                 }else textCode.setTextColorRes(R.color.onBackground)
 
+                cardCode.setCardBackgroundColor(Color.parseColor(codeTheme.background))
                 textCode.text = item.codeSpanned
                 if (item.codeSpanned.isEmpty()) {
                     val colored = item.glow(codeTheme)

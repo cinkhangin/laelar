@@ -58,7 +58,7 @@ dependencies {
     //cinkhangin
     implementation("com.github.cinkhangin:anhance:1.3.4")
     implementation("com.github.cinkhangin:firex:1.2.0")
-    implementation("com.github.cinkhangin:glow:1.1.0")
+    implementation("com.github.cinkhangin:glow:1.1.1")
 
     //room
     implementation("androidx.room:room-runtime:2.5.2")
@@ -74,7 +74,7 @@ afterEvaluate {
             create<MavenPublication>("release") {
                 groupId = "com.github.cinkhangin"
                 artifactId = "laelar"
-                version = "0.2.1"
+                version = "0.2.2"
                 from(components["release"])
             }
         }
