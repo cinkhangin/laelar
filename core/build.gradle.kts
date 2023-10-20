@@ -58,7 +58,7 @@ dependencies {
     //cinkhangin
     implementation("com.github.cinkhangin:anhance:1.3.4")
     implementation("com.github.cinkhangin:firex:1.2.0")
-    implementation("com.github.cinkhangin:glow:1.1.1")
+    implementation("com.github.cinkhangin:glow:1.2.0")
 
     //room
     val roomVersion = "2.6.0"
