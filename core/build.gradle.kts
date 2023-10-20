@@ -61,9 +61,10 @@ dependencies {
     implementation("com.github.cinkhangin:glow:1.1.1")
 
     //room
-    implementation("androidx.room:room-runtime:2.5.2")
-    implementation("androidx.room:room-ktx:2.5.2")
-    ksp("androidx.room:room-compiler:2.5.2")
+    val roomVersion = "2.6.0"
+    implementation("androidx.room:room-runtime:$roomVersion")
+    implementation("androidx.room:room-ktx:$roomVersion")
+    ksp("androidx.room:room-compiler:$roomVersion")
 
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
 }
@@ -74,7 +75,7 @@ afterEvaluate {
             create<MavenPublication>("release") {
                 groupId = "com.github.cinkhangin"
                 artifactId = "laelar"
-                version = "0.2.2"
+                version = "1.0.0"
                 from(components["release"])
             }
         }
