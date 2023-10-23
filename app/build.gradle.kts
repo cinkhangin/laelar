@@ -96,14 +96,14 @@ dependencies {
     //anhance
     implementation("com.github.cinkhangin:anhance:1.3.4")
     implementation("com.github.cinkhangin:firex:1.2.0")
-    implementation("com.github.cinkhangin:glow:1.0.2")
 
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
 
     //room
-    implementation("androidx.room:room-runtime:2.5.2")
-    implementation("androidx.room:room-ktx:2.5.2")
-    ksp("androidx.room:room-compiler:2.5.2")
+    val roomVersion = "2.6.0"
+    implementation("androidx.room:room-runtime:$roomVersion")
+    implementation("androidx.room:room-ktx:$roomVersion")
+    ksp("androidx.room:room-compiler:$roomVersion")
 
 
     implementation(
